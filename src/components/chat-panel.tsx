@@ -57,6 +57,56 @@ export function ChatPanel() {
 		[],
 	);
 
+	async function triggerRecommendation() {
+		try {
+			const state = useChatStore.getState();
+			const riasec = state.aiExtractedData.riasec;
+
+			// Option A: If RIASEC data is missing, don't proceed with meaningless fallback
+			if (!riasec) {
+				setProbingStep("riasec");
+				addMessage({
+					role: "assistant",
+					content:
+						"Mình chưa đủ dữ liệu để phân tích hồ sơ nghề nghiệp cho bạn. Bạn trả lời thêm vài câu hỏi nữa nhé! 🙏",
+				});
+				return;
+			}
+
+			const res = await fetch("/api/recommend", {
+				method: "POST",
+				headers: { "Content-Type": "application/json" },
+				body: JSON.stringify({
+					riasec,
+					mbti: state.aiExtractedData.mbti,
+					modalData: state.modalData,
+					preferencesLog: state.preferencesLog,
+				}),
+			});
+
+			const data = await res.json();
+			setCareerResults(
+				data.primarySuggestions || [],
+				data.reconsideredSuggestions || [],
+			);
+			setProbingStep("complete");
+
+			const topCareer = data.primarySuggestions?.[0];
+			addMessage({
+				role: "assistant",
+				content: `✅ Mình đã phân tích xong! Kết quả đã hiển thị bên phải.\n\n**Top gợi ý:** ${topCareer?.careerTitle || "Xem Dashboard"}\n\nBạn có thể xem chi tiết ở **Dashboard** bên cạnh — bao gồm ${data.primarySuggestions?.length || 0} gợi ý chính${data.reconsideredSuggestions?.length ? ` và ${data.reconsideredSuggestions.length} ngành đáng cân nhắc lại` : ""}.`,
+			});
+		} catch {
+			setProbingStep("complete");
+			setCareerResults([], []);
+			addMessage({
+				role: "assistant",
+				content:
+					"Xin lỗi, mình gặp lỗi khi phân tích kết quả. Bạn thử nhắn thêm vài câu để mình thử lại nhé! 🙏",
+			});
+		}
+	}
+
 	const handleSend = useCallback(async () => {
 		const trimmed = input.trim();
 		if (!trimmed || isStreaming) return;
@@ -123,56 +173,6 @@ export function ChatPanel() {
 		setIsStreaming,
 		advanceProbingStep,
 	]);
-
-	async function triggerRecommendation() {
-		try {
-			const state = useChatStore.getState();
-			const riasec = state.aiExtractedData.riasec;
-
-			// Option A: If RIASEC data is missing, don't proceed with meaningless fallback
-			if (!riasec) {
-				setProbingStep("riasec");
-				addMessage({
-					role: "assistant",
-					content:
-						"Mình chưa đủ dữ liệu để phân tích hồ sơ nghề nghiệp cho bạn. Bạn trả lời thêm vài câu hỏi nữa nhé! 🙏",
-				});
-				return;
-			}
-
-			const res = await fetch("/api/recommend", {
-				method: "POST",
-				headers: { "Content-Type": "application/json" },
-				body: JSON.stringify({
-					riasec,
-					mbti: state.aiExtractedData.mbti,
-					modalData: state.modalData,
-					preferencesLog: state.preferencesLog,
-				}),
-			});
-
-			const data = await res.json();
-			setCareerResults(
-				data.primarySuggestions || [],
-				data.reconsideredSuggestions || [],
-			);
-			setProbingStep("complete");
-
-			const topCareer = data.primarySuggestions?.[0];
-			addMessage({
-				role: "assistant",
-				content: `✅ Mình đã phân tích xong! Kết quả đã hiển thị bên phải.\n\n**Top gợi ý:** ${topCareer?.careerTitle || "Xem Dashboard"}\n\nBạn có thể xem chi tiết ở **Dashboard** bên cạnh — bao gồm ${data.primarySuggestions?.length || 0} gợi ý chính${data.reconsideredSuggestions?.length ? ` và ${data.reconsideredSuggestions.length} ngành đáng cân nhắc lại` : ""}.`,
-			});
-		} catch {
-			setProbingStep("complete");
-			setCareerResults([], []);
-			addMessage({
-				role: "assistant",
-				content:
-					"Xin lỗi, mình gặp lỗi khi phân tích kết quả. Bạn thử nhắn thêm vài câu để mình thử lại nhé! 🙏",
-			});
-		}
-	}
 
 	function handleKeyDown(e: React.KeyboardEvent) {
 		if (e.key === "Enter" && !e.shiftKey) {

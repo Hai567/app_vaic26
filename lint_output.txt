@@ -1,0 +1,150 @@
+
+> app@0.1.0 lint
+> eslint
+
+
+D:\projects\daFalcon_vaic_26\app\run-migration.ts
+  50:19  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\projects\daFalcon_vaic_26\app\scripts\ingest_real_data.ts
+   2:19  warning  'majors' is defined but never used           @typescript-eslint/no-unused-vars
+   2:27  warning  'universities' is defined but never used     @typescript-eslint/no-unused-vars
+   2:41  warning  'admissionScores' is defined but never used  @typescript-eslint/no-unused-vars
+  45:35  warning  Unexpected any. Specify a different type     @typescript-eslint/no-explicit-any
+
+D:\projects\daFalcon_vaic_26\app\scripts\seed_all.ts
+  402:2  warning  'careerRows' is defined but never used  @typescript-eslint/no-unused-vars
+
+D:\projects\daFalcon_vaic_26\app\src\app\api\chat\route.ts
+   10:15  warning  'ModalData' is defined but never used             @typescript-eslint/no-unused-vars
+  133:21  warning  'probingStep' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  235:41  warning  Unexpected any. Specify a different type          @typescript-eslint/no-explicit-any
+  269:26  warning  Unexpected any. Specify a different type          @typescript-eslint/no-explicit-any
+
+D:\projects\daFalcon_vaic_26\app\src\app\api\recommend\route.ts
+  37:10  warning  'matchingGaps' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+D:\projects\daFalcon_vaic_26\app\src\app\api\roadmap\route.ts
+  7:27  warning  'request' is defined but never used  @typescript-eslint/no-unused-vars
+
+D:\projects\daFalcon_vaic_26\app\src\app\api\user\route.ts
+  38:11  warning  'newUser' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+D:\projects\daFalcon_vaic_26\app\src\app\auth\signup\page.tsx
+  14:8  warning  'router' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+D:\projects\daFalcon_vaic_26\app\src\app\chat\page.tsx
+  16:5  warning  'modalData' is assigned a value but never used        @typescript-eslint/no-unused-vars
+  17:5  warning  'aiExtractedData' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  21:5  warning  'showOnboarding' is assigned a value but never used   @typescript-eslint/no-unused-vars
+  22:5  warning  'showSettings' is assigned a value but never used     @typescript-eslint/no-unused-vars
+
+D:\projects\daFalcon_vaic_26\app\src\components\chat-panel.tsx
+   22:3   warning  'preferencesLog' is assigned a value but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      @typescript-eslint/no-unused-vars
+  104:11  error    Error: Cannot access variable before it is declared
+
+`triggerRecommendation` is accessed before it is declared, which prevents the earlier access from updating when this value changes over time.
+
+D:\projects\daFalcon_vaic_26\app\src\components\chat-panel.tsx:104:11
+  102 | 			if (data.isProfileComplete) {
+  103 | 				setProbingStep("analyzing");
+> 104 | 				await triggerRecommendation();
+      | 				      ^^^^^^^^^^^^^^^^^^^^^ `triggerRecommendation` accessed before it is declared
+  105 | 			}
+  106 | 		} catch {
+  107 | 			addMessage({
+
+D:\projects\daFalcon_vaic_26\app\src\components\chat-panel.tsx:127:2
+  125 | 	]);
+  126 |
+> 127 | 	async function triggerRecommendation() {
+      | 	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 128 | 		try {
+      | ^^^^^^^
+> 129 | 			const state = useChatStore.getState();
+      …
+      | ^^^^^^^
+> 174 | 		}
+      | ^^^^^^^
+> 175 | 	}
+      | ^^^ `triggerRecommendation` is declared here
+  176 |
+  177 | 	function handleKeyDown(e: React.KeyboardEvent) {
+  178 | 		if (e.key === "Enter" && !e.shiftKey) {  react-hooks/immutability
+  116:5   warning  React Hook useCallback has missing dependencies: 'setAiExtractedData' and 'triggerRecommendation'. Either include them or remove the dependency array                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    react-hooks/exhaustive-deps
+
+D:\projects\daFalcon_vaic_26\app\src\components\nav-bar.tsx
+  21:36  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\projects\daFalcon_vaic_26\app\src\components\profile-settings.tsx
+   9:7   warning  'ElectiveSubject' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                @typescript-eslint/no-unused-vars
+  33:35  warning  'Check' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          @typescript-eslint/no-unused-vars
+  51:4   warning  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+D:\projects\daFalcon_vaic_26\app\src\components\profile-settings.tsx:51:4
+  49 | 	useEffect(() => {
+  50 | 		if (showSettings && modalData) {
+> 51 | 			setCurrentGrade(modalData.currentGrade);
+     | 			^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  52 | 			const m = modalData.mandatorySubjects.find(s => s.name === "Toán");
+  53 | 			const v = modalData.mandatorySubjects.find(s => s.name === "Ngữ văn");
+  54 | 			setMathScore(m?.score ?? null);  react-hooks/set-state-in-effect
+
+D:\projects\daFalcon_vaic_26\app\src\components\radar-chart.tsx
+   37:3   warning  'jobTitle' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               @typescript-eslint/no-unused-vars
+   41:19  warning  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+D:\projects\daFalcon_vaic_26\app\src\components\radar-chart.tsx:41:19
+  39 |   const { theme } = useTheme();
+  40 |   const [mounted, setMounted] = useState(false);
+> 41 |   useEffect(() => setMounted(true), []);
+     |                   ^^^^^^^^^^ Avoid calling setState() directly within an effect
+  42 |
+  43 |   const isDark = mounted && theme === "dark";
+  44 |  react-hooks/set-state-in-effect
+  114:40  warning  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           @typescript-eslint/no-explicit-any
+
+D:\projects\daFalcon_vaic_26\app\src\components\theme-toggle.tsx
+  11:19  warning  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+D:\projects\daFalcon_vaic_26\app\src\components\theme-toggle.tsx:11:19
+   9 |   const [mounted, setMounted] = useState(false);
+  10 |
+> 11 |   useEffect(() => setMounted(true), []);
+     |                   ^^^^^^^^^^ Avoid calling setState() directly within an effect
+  12 |
+  13 |   if (!mounted) {
+  14 |     return (  react-hooks/set-state-in-effect
+
+D:\projects\daFalcon_vaic_26\app\src\lib\knowledgeGraphService.ts
+   2:18  warning  'careers' is defined but never used       @typescript-eslint/no-unused-vars
+  42:25  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  89:34  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\projects\daFalcon_vaic_26\app\src\lib\rag-pipeline.ts
+  170:11  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  170:19  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\projects\daFalcon_vaic_26\app\src\services\analyticalEngine.ts
+  2:58  warning  'users' is defined but never used  @typescript-eslint/no-unused-vars
+
+✖ 35 problems (1 error, 34 warnings)
+
