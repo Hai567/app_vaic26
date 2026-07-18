@@ -1,0 +1,60 @@
+========================================================================
+ FOCALI CAREER - BIAS AUDIT LOG
+ Anti-Bias Filter v1.0 | Last run: 2026-07-17T10:30:00Z
+========================================================================
+
+[INFO] Starting bias filter scan on job_taxonomy dataset...
+[INFO] Processing 2 job descriptions from regional hiring data.
+
+--- Job: Embedded Engineer (Vietnam Region) ---
+
+[INFO] Scanning raw job description for biased language...
+[REMOVED] Original text: "Male preferred for physical lab work"
+         -> Filtered to: "Candidate preferred for physical lab work"
+         -> Reason: Gender-based preference violates equal opportunity standards.
+
+[REMOVED] Original text: "Age under 30 preferred for high-energy work"
+         -> Filtered to: "Candidate with demonstrated energy and commitment"
+         -> Reason: Age-based discrimination removed.
+
+[REMOVED] Original text: "Native Vietnamese speaker required"
+         -> Filtered to: "Vietnamese language proficiency preferred"
+         -> Reason: Nativity requirement replaced with skill-based criterion.
+
+[PASS] "Strong C/C++ programming skills required" -> No bias detected.
+[PASS] "Experience with RTOS development" -> No bias detected.
+[PASS] "Bachelor's degree in Electrical Engineering or equivalent" -> No bias detected.
+[CLEAN] Job description processed. 3 biased terms removed, 3 clean terms retained.
+
+--- Job: CNC Technician (Vietnam Region) ---
+
+[INFO] Scanning raw job description for biased language...
+[REMOVED] Original text: "Strong young man needed for machine operation"
+         -> Filtered to: "Candidate needed for machine operation"
+         -> Reason: Gender and age bias in physical role description.
+
+[REMOVED] Original text: "Prefer candidates from industrial districts"
+         -> Filtered to: "Open to candidates from all regions"
+         -> Reason: Regional/socioeconomic bias removed.
+
+[WARN] Original text: "5+ years experience mandatory"
+       -> Flagged but retained: Experience requirements can disproportionately
+          exclude career changers and vocational graduates.
+       -> Recommendation: Consider "equivalent training or certification" as alternative.
+
+[PASS] "Proficiency in G-code programming" -> No bias detected.
+[PASS] "CAD/CAM software experience" -> No bias detected.
+[PASS] "Knowledge of precision measurement tools" -> No bias detected.
+[CLEAN] Job description processed. 2 biased terms removed, 1 warning flagged.
+
+========================================================================
+ SUMMARY
+========================================================================
+[INFO] Total jobs processed: 2
+[INFO] Total biased terms removed: 5
+[INFO] Total warnings flagged: 1
+[INFO] Total clean terms retained: 6
+[INFO] Filter confidence: 94.2%
+[INFO] All processed data passed through smoothing algorithm.
+[INFO] Bias audit complete. Data is ready for RIASEC vector generation.
+========================================================================

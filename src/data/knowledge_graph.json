@@ -1,0 +1,5459 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "Nhóm Ngành",
+      "description": "Chịu trách nhiệm ghi chép chính xác giao dịch tài chính, kiểm toán nội bộ, quản trị dòng tiền, lập báo cáo thuế và phân tích rủi ro đầu tư nhằm tối ưu hóa hiệu quả sử dụng nguồn vốn doanh nghiệp.",
+      "salary": "9 - 15 triệu VNĐ/tháng",
+      "id": "Kế toán - Tài chính"
+    },
+    {
+      "label": "Mã RIASEC",
+      "id": "C"
+    },
+    {
+      "label": "Mã RIASEC",
+      "id": "E"
+    },
+    {
+      "label": "Mã RIASEC",
+      "id": "I"
+    },
+    {
+      "label": "Mã MBTI",
+      "id": "ISTJ"
+    },
+    {
+      "label": "Mã MBTI",
+      "id": "ESTJ"
+    },
+    {
+      "label": "Mã MBTI",
+      "id": "INTJ"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Kiểm toán"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Quản trị tài chính"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Thuế"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Phân tích đầu tư"
+    },
+    {
+      "label": "Nhóm Ngành",
+      "description": "Nghiên cứu các quy luật kinh tế vĩ mô, xây dựng chính sách phát triển kinh tế - xã hội, điều phối nguồn lực tổ chức và hoạch định chiến lược quy hoạch không gian đô thị bền vững.",
+      "salary": "10 - 16 triệu VNĐ/tháng",
+      "id": "Kinh tế - Quản lý - Quy hoạch"
+    },
+    {
+      "label": "Mã MBTI",
+      "id": "ENTJ"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Kinh tế học vĩ mô"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Quản lý công"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Quy hoạch đô thị"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Quản trị vận hành"
+    },
+    {
+      "label": "Nhóm Ngành",
+      "description": "Thu thập, kiểm chứng và truyền tải thông tin thời sự đến công chúng qua các phương tiện truyền thông đa nền tảng, đồng thời quản lý, lưu trữ và phổ biến hệ thống tri thức nhân loại.",
+      "id": "Báo chí - Thư viện"
+    },
+    {
+      "label": "Mã RIASEC",
+      "id": "A"
+    },
+    {
+      "label": "Mã RIASEC",
+      "id": "S"
+    },
+    {
+      "label": "Mã MBTI",
+      "id": "ENFP"
+    },
+    {
+      "label": "Mã MBTI",
+      "id": "INFJ"
+    },
+    {
+      "label": "Mã MBTI",
+      "id": "INFP"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Báo chí đa phương tiện"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Thông tin học"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Quản trị thư viện số"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Quan hệ công chúng (PR)"
+    },
+    {
+      "label": "Nhóm Ngành",
+      "description": "Nghiên cứu cơ chế bệnh lý, chẩn đoán, điều trị cứu chữa người bệnh bằng phương pháp y học lâm sàng và nghiên cứu, sản xuất, phân phối các dược chất bảo vệ sức khỏe cộng đồng.",
+      "salary": "12 - 20 triệu VNĐ/tháng",
+      "id": "Y - Dược"
+    },
+    {
+      "label": "Mã RIASEC",
+      "id": "R"
+    },
+    {
+      "label": "Mã MBTI",
+      "id": "ISFJ"
+    },
+    {
+      "label": "Mã MBTI",
+      "id": "ISTP"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Y khoa lâm sàng"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Dược học & Bào chế"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Điều dưỡng"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Y tế công cộng"
+    },
+    {
+      "label": "Nhóm Ngành",
+      "description": "Nghiên cứu thiết kế phần cứng điện tử, vận hành hệ thống lưới điện công nghiệp và tích hợp cơ khí chính xác với giải thuật điều khiển thông minh để phát triển robot tự hành.",
+      "salary": "11 - 17 triệu VNĐ/tháng",
+      "id": "Điện - Cơ điện tử"
+    },
+    {
+      "label": "Mã MBTI",
+      "id": "INTP"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Kỹ thuật điện công nghiệp"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Cơ điện tử & Robot"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Hệ thống điều khiển"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Thiết kế phần cứng"
+    },
+    {
+      "label": "Nhóm Ngành",
+      "description": "Hoạch định chiến lược thiết kế kết cấu chịu lực, quản lý kỹ thuật thi công tại công trường thực địa và dự toán chi phí xây dựng các công trình hạ tầng kỹ thuật dân dụng bền vững.",
+      "salary": "10 - 15 triệu VNĐ/tháng",
+      "id": "Xây dựng"
+    },
+    {
+      "label": "Mã MBTI",
+      "id": "ESTP"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Kỹ thuật kết cấu"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Quản lý dự án xây dựng"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Địa kỹ thuật"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Quy hoạch hạ tầng"
+    },
+    {
+      "label": "Nhóm Ngành",
+      "description": "Bảo vệ quyền lợi hợp pháp của các chủ thể, thực hiện chức năng tư vấn pháp lý doanh nghiệp, tranh tụng tố tụng tại tòa án và thực thi quyền lực tư pháp công minh.",
+      "salary": "9 - 15 triệu VNĐ/tháng",
+      "id": "Luật - Tòa án"
+    },
+    {
+      "label": "Mã MBTI",
+      "id": "ENTP"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Luật hình sự"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Luật dân sự & thương mại"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Tố tụng và xét xử"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Tư vấn pháp lý doanh nghiệp"
+    },
+    {
+      "label": "Nhóm Ngành",
+      "description": "Quản trị vận hành hệ thống lưu trú, thiết kế trải nghiệm lữ hành độc đáo, tổ chức sự kiện văn hóa nghệ thuật và nâng cao chất lượng dịch vụ chăm sóc khách hàng toàn cầu.",
+      "salary": "8 - 14 triệu VNĐ/tháng",
+      "id": "Du lịch - Khách sạn"
+    },
+    {
+      "label": "Mã MBTI",
+      "id": "ESFJ"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Quản trị khách sạn"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Quản trị lữ hành"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Quản trị ẩm thực (F&B)"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Tổ chức sự kiện"
+    },
+    {
+      "label": "Nhóm Ngành",
+      "description": "Sáng tạo các tác phẩm nghệ thuật hội họa độc bản và ứng dụng tư duy thẩm mỹ thị giác vào thiết kế đồ họa truyền thông truyền tải thông điệp thương hiệu hiệu quả.",
+      "id": "Mỹ thuật - Thiết kế"
+    },
+    {
+      "label": "Mã MBTI",
+      "id": "ISFP"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Hội họa & Điêu khắc"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Thiết kế đồ họa"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Thiết kế nội thất"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Thiết kế công nghiệp"
+    },
+    {
+      "label": "Nhóm Ngành",
+      "description": "Nghiên cứu chất liệu dệt may, thiết kế phom dáng quần áo, phát triển bộ sưu tập may mặc theo xu hướng và hoạch định chiến lược kinh doanh thương hiệu thời trang ứng dụng.",
+      "salary": "9 - 15 triệu VNĐ/tháng",
+      "id": "Thời trang"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Thiết kế thời trang"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Quản trị thương hiệu thời trang"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Công nghệ may"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Stylist tạo dựng phong cách"
+    },
+    {
+      "label": "Nhóm Ngành",
+      "description": "Nuôi trồng sinh học nước mặn/lợ/ngọt, chẩn đoán dịch tễ học thủy hải sản, chế biến sâu nguồn lợi thủy sản và quản lý chiến lược khai thác thủy sản bền vững môi trường biển.",
+      "salary": "9 - 14 triệu VNĐ/tháng",
+      "id": "Thủy sản"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Nuôi trồng thủy sản"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Khai thác thủy sản"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Chế biến thủy hải sản"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Bệnh học thủy sản"
+    },
+    {
+      "label": "Nhóm Ngành",
+      "description": "Xây dựng chiến lược thu hút nhân tài, thiết kế lộ trình đào tạo phát triển nội bộ, quản trị tiền lương phúc lợi (C&B) và thiết lập môi trường văn hóa doanh nghiệp gắn kết.",
+      "salary": "9 - 14 triệu VNĐ/tháng",
+      "id": "Nhân sự"
+    },
+    {
+      "label": "Mã MBTI",
+      "id": "ENFJ"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Tuyển dụng & Thu hút tài năng"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Đào tạo & Phát triển (L&D)"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Tiền lương & Phúc lợi (C&B)"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Phát triển tổ chức"
+    },
+    {
+      "label": "Nhóm Ngành",
+      "description": "Nghiên cứu toán học lý thuyết thuần túy và ứng dụng giải thuật tối ưu hóa, phân tích xác suất thống kê định lượng để giải quyết các bài toán khoa học dữ liệu thực tế.",
+      "salary": "12 - 20 triệu VNĐ/tháng",
+      "id": "Toán học - Thống kê"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Thống kê ứng dụng"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Toán tài chính"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Khoa học tính toán bảo hiểm"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Toán tối ưu hóa"
+    },
+    {
+      "label": "Nhóm Ngành",
+      "description": "Khám phá các quy luật nền tảng của tự nhiên, nghiên cứu cấu trúc vật chất, phản ứng hóa học và năng lượng vũ trụ thông qua thực nghiệm khoa học nghiêm cẩn phòng thí nghiệm.",
+      "salary": "10 - 15 triệu VNĐ/tháng",
+      "id": "Khoa học tự nhiên"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Vật lý học"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Hóa học"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Khoa học Trái đất & Môi trường"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Thiên văn học"
+    },
+    {
+      "label": "Nhóm Ngành",
+      "description": "Nghiên cứu bảo tồn các giá trị di sản văn hóa truyền thống, giảng dạy nghệ thuật cộng đồng và sáng tác, đạo diễn biểu diễn các tác phẩm sân khấu nghệ thuật tương tác.",
+      "salary": "8 - 13 triệu VNĐ/tháng",
+      "id": "Văn hóa - Nghệ thuật"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Nghiên cứu văn hóa"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Quản lý di sản"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Biểu diễn nghệ thuật"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Sáng tác & phê bình nghệ thuật"
+    },
+    {
+      "label": "Nhóm Ngành",
+      "description": "Trực tiếp chăm sóc y tế giảm nhẹ, điều trị phục hồi chức năng vật lý trị liệu cho người bệnh và tổ chức các chương trình y tế dự phòng bảo vệ sức khỏe cộng đồng.",
+      "salary": "9 - 14 triệu VNĐ/tháng",
+      "id": "Chăm sóc sức khỏe"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Chăm sóc giảm nhẹ & Điều dưỡng"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Vật lý trị liệu"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Y tế dự phòng cộng đồng"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Dinh dưỡng lâm sàng"
+    },
+    {
+      "label": "Tổ Hợp Xét Tuyển",
+      "id": "D01"
+    },
+    {
+      "label": "Tổ Hợp Xét Tuyển",
+      "id": "A01"
+    },
+    {
+      "label": "Tổ Hợp Xét Tuyển",
+      "id": "A00"
+    },
+    {
+      "label": "Tổ Hợp Xét Tuyển",
+      "id": "D07"
+    },
+    {
+      "label": "Tổ Hợp Xét Tuyển",
+      "id": "X26, K01"
+    },
+    {
+      "label": "Tổ Hợp Xét Tuyển",
+      "id": "C01"
+    },
+    {
+      "label": "Tổ Hợp Xét Tuyển",
+      "id": "X02, K21, TH6, DK, F01, TH3"
+    },
+    {
+      "label": "Tổ Hợp Xét Tuyển",
+      "id": "X25"
+    },
+    {
+      "label": "Tổ Hợp Xét Tuyển",
+      "id": "D09"
+    },
+    {
+      "label": "Tổ Hợp Xét Tuyển",
+      "id": "X01"
+    },
+    {
+      "label": "Tổ Hợp Xét Tuyển",
+      "id": "C04"
+    },
+    {
+      "label": "Tổ Hợp Xét Tuyển",
+      "id": "C03"
+    },
+    {
+      "label": "Tổ Hợp Xét Tuyển",
+      "id": "D10"
+    },
+    {
+      "label": "Tổ Hợp Xét Tuyển",
+      "id": "C02"
+    },
+    {
+      "label": "Tổ Hợp Xét Tuyển",
+      "id": "Q00"
+    },
+    {
+      "label": "Tổ Hợp Xét Tuyển",
+      "id": "X27; D0C; K20; TH5; TH7"
+    },
+    {
+      "label": "Tổ Hợp Xét Tuyển",
+      "id": "K00"
+    },
+    {
+      "label": "Tổ Hợp Xét Tuyển",
+      "id": "X06, A0T, GT1, TH1"
+    },
+    {
+      "label": "Tổ Hợp Xét Tuyển",
+      "id": "X05"
+    },
+    {
+      "label": "Tổ Hợp Xét Tuyển",
+      "id": "X03; TH8; K22; E01"
+    },
+    {
+      "label": "Tổ Hợp Xét Tuyển",
+      "id": "C00"
+    },
+    {
+      "label": "Tổ Hợp Xét Tuyển",
+      "id": "A04"
+    },
+    {
+      "label": "Tổ Hợp Xét Tuyển",
+      "id": "X28, K20, D0C"
+    },
+    {
+      "label": "Tổ Hợp Xét Tuyển",
+      "id": "A03"
+    },
+    {
+      "label": "Tổ Hợp Xét Tuyển",
+      "id": "X07, A0C, TH3, TH4"
+    },
+    {
+      "label": "Tổ Hợp Xét Tuyển",
+      "id": "X10, TH4"
+    },
+    {
+      "label": "Tổ Hợp Xét Tuyển",
+      "id": "D14"
+    },
+    {
+      "label": "Tổ Hợp Xét Tuyển",
+      "id": "A07"
+    },
+    {
+      "label": "Tổ Hợp Xét Tuyển",
+      "id": "X21"
+    },
+    {
+      "label": "Tổ Hợp Xét Tuyển",
+      "id": "X54"
+    },
+    {
+      "label": "Tổ Hợp Xét Tuyển",
+      "id": "A05"
+    },
+    {
+      "label": "Tổ Hợp Xét Tuyển",
+      "id": "X74"
+    },
+    {
+      "label": "Tổ Hợp Xét Tuyển",
+      "id": "X04; TH8; K22; E01"
+    },
+    {
+      "label": "Tổ Hợp Xét Tuyển",
+      "id": "X17"
+    },
+    {
+      "label": "Tổ Hợp Xét Tuyển",
+      "id": "A06"
+    },
+    {
+      "label": "Tổ Hợp Xét Tuyển",
+      "id": "D15"
+    },
+    {
+      "label": "Tổ Hợp Xét Tuyển",
+      "id": "B03"
+    },
+    {
+      "label": "Tổ Hợp Xét Tuyển",
+      "id": "D03"
+    },
+    {
+      "label": "Tổ Hợp Xét Tuyển",
+      "id": "B00"
+    },
+    {
+      "label": "Tổ Hợp Xét Tuyển",
+      "id": "A02"
+    },
+    {
+      "label": "Tổ Hợp Xét Tuyển",
+      "id": "X08"
+    },
+    {
+      "label": "Tổ Hợp Xét Tuyển",
+      "id": "X56"
+    },
+    {
+      "label": "Tổ Hợp Xét Tuyển",
+      "id": "X11, B0C, TH5"
+    },
+    {
+      "label": "Tổ Hợp Xét Tuyển",
+      "id": "N00"
+    },
+    {
+      "label": "Tổ Hợp Xét Tuyển",
+      "id": "H00"
+    },
+    {
+      "label": "Tổ Hợp Xét Tuyển",
+      "id": "X78"
+    },
+    {
+      "label": "Tổ Hợp Xét Tuyển",
+      "id": "X70"
+    },
+    {
+      "label": "Tổ Hợp Xét Tuyển",
+      "id": "V00"
+    },
+    {
+      "label": "Tổ Hợp Xét Tuyển",
+      "id": "S00"
+    },
+    {
+      "label": "Tổ Hợp Xét Tuyển",
+      "id": "V01"
+    },
+    {
+      "label": "Tổ Hợp Xét Tuyển",
+      "id": "H02"
+    },
+    {
+      "label": "Tổ Hợp Xét Tuyển",
+      "id": "H01"
+    },
+    {
+      "label": "Tổ Hợp Xét Tuyển",
+      "id": "H10; H11; H06"
+    },
+    {
+      "label": "Tổ Hợp Xét Tuyển",
+      "id": "N03"
+    },
+    {
+      "label": "Tổ Hợp Xét Tuyển",
+      "id": "D11"
+    },
+    {
+      "label": "Tổ Hợp Xét Tuyển",
+      "id": "N02"
+    },
+    {
+      "label": "Tổ Hợp Xét Tuyển",
+      "id": "N01"
+    },
+    {
+      "label": "Tổ Hợp Xét Tuyển",
+      "id": "H07"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "uni",
+      "location": "ha noi",
+      "id": "Đại học Quốc gia Hà Nội (VNU)"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Kinh tế"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "y dược"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "toán học"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "vật lý"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "hóa học"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "sinh học"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "kỹ thuật robot"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "uni",
+      "location": "ha noi",
+      "id": "Đại học Bách khoa Hà Nội (HUST)"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "kỹ thuật điều khiển và tự động hóa"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "kỹ thuật điện tử - viễn thông"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "kỹ thuật điện"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "kỹ thuật cơ điện tử"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "toán - tin"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "uni",
+      "location": "ha noi",
+      "id": "Trường Đại học Kinh tế Quốc dân (NEU)"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "quản trị kinh doanh"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "tài chính - ngân hàng"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "kế toán"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "marketing"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "quản trị nhân lực"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "uni",
+      "location": "ha noi",
+      "id": "Học viện Ngoại giao (DAV)"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "truyền thông quốc tế"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "luật quốc tế"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "uni",
+      "location": "ha noi",
+      "id": "Học viện Tài chính (AOF)"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Tài chính"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "ngân hàng"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "kiểm toán"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "uni",
+      "location": "ha noi",
+      "id": "Đại học Ngoại thương (FTU)"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "uni",
+      "location": "ha noi",
+      "id": "Đại học Văn hóa Hà Nội (HUC)"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Quản lý văn hóa"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "du lịch"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "thông tin thư viện"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "báo chí"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "uni",
+      "location": "ha noi",
+      "id": "Đại học Luật Hà Nội (HLU)"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Luật"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "luật kinh tế"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "luật thương mại quốc tế"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "uni",
+      "location": "ha noi",
+      "id": "Học viện Công nghệ Bưu chính Viễn thông (PTIT)"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "kỹ thuật điện tử viễn thông"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "công nghệ đa phương tiện"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "uni",
+      "location": "ha noi",
+      "id": "Đại học Hà Nội (HANU)"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "uni",
+      "location": "ha noi",
+      "id": "Học viện Ngân hàng (BA)"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Tài chính - ngân hàng"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "uni",
+      "location": "ha noi",
+      "id": "Đại học Xây dựng Hà Nội (HUCE)"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Kỹ thuật xây dựng"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "kiến trúc"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "quản lý xây dựng"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "uni",
+      "location": "ha noi",
+      "id": "Đại học Y Hà Nội (HMU)"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Y khoa"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "răng - hàm - mặt"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "y học cổ truyền"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "điều dưỡng"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "kỹ thuật xét nghiệm y học"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "uni",
+      "location": "ha noi",
+      "id": "Học viện Báo chí và Tuyên truyền (AJC)"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Báo chí"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "truyền thông"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "quan hệ công chúng"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "xuất bản"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "uni",
+      "location": "ha noi",
+      "id": "Đại học Mỏ - Địa chất (HUMG)"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "uni",
+      "location": "ha noi",
+      "id": "Đại học Lâm nghiệp Việt Nam"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Lâm nghiệp"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "uni",
+      "location": "ha noi",
+      "id": "Đại học Công nghệ Giao thông vận tải (UTT)"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Kỹ thuật xây dựng công trình giao thông"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "uni",
+      "location": "ha noi",
+      "id": "Đại học FPT"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "thiết kế đồ họa và mỹ thuật số"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "truyền thông đa phương tiện"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "truyền thông marketing tích hợp"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "truyền thông thương hiệu"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "luật"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "quản trị khách sạn"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "quản trị dịch vụ du lịch và lữ hành"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "phân tích kinh doanh"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "công nghệ tài chính"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "tài chính doanh nghiệp"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "tài chính thông minh"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "tài chính ngân hàng"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "uni",
+      "location": "ha noi",
+      "id": "Trường Đại học Thủy lợi (TLU)"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Kỹ thuật xây dựng công trình thủy"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "kỹ thuật xây dựng dân dụng và công nghiệp"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "uni",
+      "location": "ha noi",
+      "id": "Trường Đại học Điện lực (EPU)"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "uni",
+      "location": "ha noi",
+      "id": "Trường Đại học Mở Hà Nội (HOU)"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "thiết kế thời trang"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "bảo hiểm"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "công nghệ kỹ thuật điện tử - viễn thông"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "công nghệ kỹ thuật điều khiển và tự động hóa"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "thiết kế nội thất"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "uni",
+      "location": "ha noi",
+      "id": "Đại học Phenikaa"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "kinh tế số"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "kinh doanh số"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "công nghệ marketing"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "kinh doanh du lịch số"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "hướng dẫn du lịch quốc tế"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "dược học"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "kỹ thuật phục hồi chức năng"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "kỹ thuật hình ảnh y học"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "y khoa"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "uni",
+      "location": "ha noi",
+      "id": "Trường Đại học Thăng Long (DTL)"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "uni",
+      "location": "ha noi",
+      "id": "Trường Đại học Kinh doanh và Công nghệ Hà Nội (HUBT)"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "kinh tế"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "quản lý nhà nước"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "công nghệ kỹ thuật cơ - điện tử"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "công nghệ kỹ thuật điện điện tử"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "quản lý đô thị và công trình"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "kỹ thuật xây dựng"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "dược"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "uni",
+      "location": "ha noi",
+      "id": "Trường Đại học Sư phạm Nghệ thuật Trung ương (NUAE)"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "thiết kế đồ họa"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "uni",
+      "location": "ha noi",
+      "id": "Trường Đại học Thủ đô Hà Nội (HNMU)"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "vocational school",
+      "location": "ha noi",
+      "id": "Trường Cao đẳng Công nghệ Bách khoa Hà Nội (HPC)"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "hướng dẫn du lịch"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "quản trị lữ hành"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "điện công nghiệp"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "công nghệ kỹ thuật điện - điện tử"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "tự động hóa công nghiệp"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "vocational school",
+      "location": "ha noi",
+      "id": "Trường Cao đẳng FPT Polytechnic"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "thiết kế website"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "digital marketing"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "quản trị doanh nghiệp"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "quản lý bán hàng"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "thiết kế truyền thông đa phương tiện"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "thiết kế thương hiệu và bao bì"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "cơ điện tử"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "tự động hóa"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "quản trị nhà hàng"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "thiết kế đồ họa - mỹ thuật đa phương tiện"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "quản trị doanh nghiệp vừa và nhỏ - marketing & sales"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "quan hệ công chúng - truyền thông & tổ chức sự kiện"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "vocational school",
+      "location": "ha noi",
+      "id": "Trường Cao đẳng Công nghệ cao Hà Nội (HHT)"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Du lịch sinh thái"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "thiết kế nội ngoại thất"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "kế toán doanh nghiệp"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "quản trị doanh nghiệp vừa và nhỏ"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "thiết kế trang web"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "kỹ thuật lắp đặt và điều khiển điện trong công nghiệp"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "điện tử công nghiệp"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "điện tử tự động hóa"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "vocational school",
+      "location": "ha noi",
+      "id": "Trường Cao đẳng Thương mại và Du lịch Hà Nội (HCCT)"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Quản trị kinh doanh"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "kinh doanh thương mại"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "kỹ thuật chế biến món ăn"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "vocational school",
+      "location": "ha noi",
+      "id": "Trường Cao đẳng Y tế Hà Đông"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Y sĩ đa khoa"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "hộ sinh"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "kỹ thuật vật lý trị liệu và phục hồi chức năng"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "vocational school",
+      "location": "ha noi",
+      "id": "Trường Cao đẳng Y Hà Nội"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "y sĩ đa khoa"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "vocational school",
+      "location": "ha noi",
+      "id": "Trường Cao đẳng Cơ điện Hà Nội (HCEM)"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Điện công nghiệp"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "công nghệ kỹ thuật cơ điện tử"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "công nghệ kỹ thuật điện tử truyền thông"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "marketing thương mại"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "vocational school",
+      "location": "ha noi",
+      "id": "Trường Cao đẳng Ngoại ngữ và Công nghệ Hà Nội (FTC)"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "thiết kế đồ hoạ"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "vocational school",
+      "location": "ha noi",
+      "id": "Trường Cao đẳng Y Khoa Phạm Ngọc Thạch"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Cao đẳng dược"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "cao đẳng điều dưỡng"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "cao đẳng kỹ thuật phục hồi chức năng"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "trung cấp y sĩ y học cổ truyền"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "vocational school",
+      "location": "ha noi",
+      "id": "Trường Cao đẳng Ngoại ngữ - Công nghệ và Truyền thông"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "kinh doanh online"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "vocational school",
+      "location": "ha noi",
+      "id": "Trường Cao đẳng Du lịch Hà Nội (HTC)"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "quản trị nhà hàng và dịch vụ ăn uống"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "vocational school",
+      "location": "ha noi",
+      "id": "Trường Cao đẳng nghề Việt Nam - Hàn Quốc thành phố Hà Nội"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Cơ điện tử"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "vocational school",
+      "location": "ha noi",
+      "id": "Trường Cao đẳng nghề Bách khoa Hà Nội"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "vocational school",
+      "location": "ha noi",
+      "id": "Trường Cao đẳng nghề Kỹ thuật - Mỹ nghệ Việt Nam"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "điện tử"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "điện lạnh"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "vocational school",
+      "location": "ha noi",
+      "id": "Trường Cao đẳng nghề Kỹ thuật Thiết bị Y tế"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Kỹ thuật thiết bị y tế"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "điện tử y sinh"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "vocational school",
+      "location": "ha noi",
+      "id": "Trường Cao đẳng nghề Simco Sông Đà"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "xây dựng dân dụng và công nghiệp"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "vocational school",
+      "location": "ha noi",
+      "id": "Trường Cao đẳng Cộng đồng Hà Nội"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "vocational school",
+      "location": "ha noi",
+      "id": "Trường Cao đẳng Cộng đồng Hà Tây"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Nông nghiệp"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "vocational school",
+      "location": "ha noi",
+      "id": "Trường Cao đẳng Công nghệ Hà Nội"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "kỹ thuật điện - điện tử"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "vocational school",
+      "location": "ha noi",
+      "id": "Trường Cao đẳng Công nghệ và Kinh tế Hà Nội"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Kế toán"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "nông lâm nghiệp"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "vocational school",
+      "location": "ha noi",
+      "id": "Trường Cao đẳng Điện lực miền Bắc"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Kỹ thuật điện"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "vocational school",
+      "location": "ha noi",
+      "id": "Trường Cao đẳng Điện tử - Điện lạnh Hà Nội"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Kỹ thuật điện tử"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "kỹ thuật điện lạnh"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "vocational school",
+      "location": "ha noi",
+      "id": "Trường Cao đẳng Giao thông vận tải Trung ương I"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "kỹ thuật xây dựng công trình giao thông"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "vocational school",
+      "location": "ha noi",
+      "id": "Trường Cao đẳng Kinh doanh và Công nghệ Hà Nội"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "vocational school",
+      "location": "ha noi",
+      "id": "Trường Cao đẳng nghề số 1 - BQP"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "vocational school",
+      "location": "ha noi",
+      "id": "Trường Cao đẳng nghề Thăng Long"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "vocational school",
+      "location": "ha noi",
+      "id": "Trường Cao đẳng nghề Trần Hưng Đạo"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "vocational school",
+      "location": "ha noi",
+      "id": "Trường Cao đẳng nghề Văn Lang Hà Nội"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Kỹ thuật chế biến món ăn"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "vocational school",
+      "location": "ha noi",
+      "id": "Trường Cao đẳng Y Dược Tuệ Tĩnh Hà Nội"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Y học cổ truyền"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "vocational school",
+      "location": "ha noi",
+      "id": "Trường Cao đẳng Y tế Bạch Mai"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "vocational school",
+      "location": "ha noi",
+      "id": "Trường Cao đẳng Dược Hà Nội"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Dược"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "vocational school",
+      "location": "ha noi",
+      "id": "Trường Cao đẳng Anh Quốc BTEC FPT Hà Nội"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "vocational school",
+      "location": "ha noi",
+      "id": "Trường Cao đẳng Công thương Hà Nội"
+    },
+    {
+      "label": "Cơ Sở Đào Tạo",
+      "type": "vocational school",
+      "location": "ha noi",
+      "id": "Trường Cao đẳng Nghệ thuật Hà Nội"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "Âm nhạc"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "mỹ thuật"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "thanh nhạc"
+    },
+    {
+      "label": "Ngành Hẹp",
+      "id": "diễn viên kịch"
+    }
+  ],
+  "edges": [
+    {
+      "relation": "PHÙ_HỢP_RIASEC",
+      "source": "Kế toán - Tài chính",
+      "target": "C",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_RIASEC",
+      "source": "Kế toán - Tài chính",
+      "target": "E",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_RIASEC",
+      "source": "Kế toán - Tài chính",
+      "target": "I",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_MBTI",
+      "source": "Kế toán - Tài chính",
+      "target": "ISTJ",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_MBTI",
+      "source": "Kế toán - Tài chính",
+      "target": "ESTJ",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_MBTI",
+      "source": "Kế toán - Tài chính",
+      "target": "INTJ",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Kế toán - Tài chính",
+      "target": "Kiểm toán",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Kế toán - Tài chính",
+      "target": "Quản trị tài chính",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Kế toán - Tài chính",
+      "target": "Thuế",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Kế toán - Tài chính",
+      "target": "Phân tích đầu tư",
+      "key": 0
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "D01",
+      "key": 0
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "D01",
+      "key": 1
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "D01",
+      "key": 2
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "D01",
+      "key": 3
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "D01",
+      "key": 4
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "D01",
+      "key": 5
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "D01",
+      "key": 6
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "D01",
+      "key": 7
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "D01",
+      "key": 8
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "D01",
+      "key": 9
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "D01",
+      "key": 10
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "D01",
+      "key": 11
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "D01",
+      "key": 12
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "D01",
+      "key": 13
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "D01",
+      "key": 14
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "A01",
+      "key": 0
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "A01",
+      "key": 1
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "A01",
+      "key": 2
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "A01",
+      "key": 3
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "A01",
+      "key": 4
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "A01",
+      "key": 5
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "A01",
+      "key": 6
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "A01",
+      "key": 7
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "A01",
+      "key": 8
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "A01",
+      "key": 9
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "A01",
+      "key": 10
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "A00",
+      "key": 0
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "A00",
+      "key": 1
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "A00",
+      "key": 2
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "A00",
+      "key": 3
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "A00",
+      "key": 4
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "A00",
+      "key": 5
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "A00",
+      "key": 6
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "A00",
+      "key": 7
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "A00",
+      "key": 8
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "A00",
+      "key": 9
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "A00",
+      "key": 10
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "D07",
+      "key": 0
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "D07",
+      "key": 1
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "D07",
+      "key": 2
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "D07",
+      "key": 3
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "D07",
+      "key": 4
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "X26, K01",
+      "key": 0
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "X26, K01",
+      "key": 1
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "X26, K01",
+      "key": 2
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "C01",
+      "key": 0
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "C01",
+      "key": 1
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "C01",
+      "key": 2
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "C01",
+      "key": 3
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "C01",
+      "key": 4
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "X02, K21, TH6, DK, F01, TH3",
+      "key": 0
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "X02, K21, TH6, DK, F01, TH3",
+      "key": 1
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "X02, K21, TH6, DK, F01, TH3",
+      "key": 2
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "X25",
+      "key": 0
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "X25",
+      "key": 1
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "X25",
+      "key": 2
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "X25",
+      "key": 3
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "D09",
+      "key": 0
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "D09",
+      "key": 1
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "D09",
+      "key": 2
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "D09",
+      "key": 3
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "X01",
+      "key": 0
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "X01",
+      "key": 1
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "X01",
+      "key": 2
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "X01",
+      "key": 3
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "C04",
+      "key": 0
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "C04",
+      "key": 1
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "C04",
+      "key": 2
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "C04",
+      "key": 3
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "C04",
+      "key": 4
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "C04",
+      "key": 5
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "C03",
+      "key": 0
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "C03",
+      "key": 1
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "C03",
+      "key": 2
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "C03",
+      "key": 3
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "C03",
+      "key": 4
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "D10",
+      "key": 0
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "D10",
+      "key": 1
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "D10",
+      "key": 2
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "D10",
+      "key": 3
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "C02",
+      "key": 0
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "C02",
+      "key": 1
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "C02",
+      "key": 2
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "C02",
+      "key": 3
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "Q00",
+      "key": 0
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "Q00",
+      "key": 1
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "Q00",
+      "key": 2
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "Q00",
+      "key": 3
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "X27; D0C; K20; TH5; TH7",
+      "key": 0
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "X27; D0C; K20; TH5; TH7",
+      "key": 1
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "X27; D0C; K20; TH5; TH7",
+      "key": 2
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "K00",
+      "key": 0
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "K00",
+      "key": 1
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "K00",
+      "key": 2
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "K00",
+      "key": 3
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "X06, A0T, GT1, TH1",
+      "key": 0
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "X06, A0T, GT1, TH1",
+      "key": 1
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "X06, A0T, GT1, TH1",
+      "key": 2
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "X06, A0T, GT1, TH1",
+      "key": 3
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "X05",
+      "key": 0
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "X05",
+      "key": 1
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "X05",
+      "key": 2
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "X03; TH8; K22; E01",
+      "key": 0
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "X03; TH8; K22; E01",
+      "key": 1
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "X03; TH8; K22; E01",
+      "key": 2
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "C00",
+      "key": 0
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "C00",
+      "key": 1
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "C00",
+      "key": 2
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "C00",
+      "key": 3
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "C00",
+      "key": 4
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "C00",
+      "key": 5
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "A04",
+      "key": 0
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "A04",
+      "key": 1
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "A04",
+      "key": 2
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "X28, K20, D0C",
+      "key": 0
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "X28, K20, D0C",
+      "key": 1
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "A03",
+      "key": 0
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "A03",
+      "key": 1
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "A03",
+      "key": 2
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "X07, A0C, TH3, TH4",
+      "key": 0
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "X07, A0C, TH3, TH4",
+      "key": 1
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "X07, A0C, TH3, TH4",
+      "key": 2
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "X10, TH4",
+      "key": 0
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "X10, TH4",
+      "key": 1
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "D14",
+      "key": 0
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "D14",
+      "key": 1
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "D14",
+      "key": 2
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "D14",
+      "key": 3
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "A07",
+      "key": 0
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "A07",
+      "key": 1
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "A07",
+      "key": 2
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "X21",
+      "key": 0
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "X21",
+      "key": 1
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "X21",
+      "key": 2
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "X54",
+      "key": 0
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "X54",
+      "key": 1
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "A05",
+      "key": 0
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "A05",
+      "key": 1
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "A05",
+      "key": 2
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "X74",
+      "key": 0
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "X74",
+      "key": 1
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "X04; TH8; K22; E01",
+      "key": 0
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "X04; TH8; K22; E01",
+      "key": 1
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "X17",
+      "key": 0
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "X17",
+      "key": 1
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "A06",
+      "key": 0
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "A06",
+      "key": 1
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "A06",
+      "key": 2
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "D15",
+      "key": 0
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "D15",
+      "key": 1
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "B03",
+      "key": 0
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "B03",
+      "key": 1
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "B03",
+      "key": 2
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "D03",
+      "key": 0
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "B00",
+      "key": 0
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "B00",
+      "key": 1
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "B00",
+      "key": 2
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "A02",
+      "key": 0
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "X08",
+      "key": 0
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "X56",
+      "key": 0
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "X11, B0C, TH5",
+      "key": 0
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "N00",
+      "key": 0
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "H00",
+      "key": 0
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "X78",
+      "key": 0
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "X70",
+      "key": 0
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "V00",
+      "key": 0
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "S00",
+      "key": 0
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "V01",
+      "key": 0
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "H02",
+      "key": 0
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "H01",
+      "key": 0
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "H10; H11; H06",
+      "key": 0
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "N03",
+      "key": 0
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "D11",
+      "key": 0
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "N02",
+      "key": 0
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "N01",
+      "key": 0
+    },
+    {
+      "relation": "CÓ_TỔ_HỢP_XÉT_TUYỂN",
+      "source": "Kế toán - Tài chính",
+      "target": "H07",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_RIASEC",
+      "source": "Kinh tế - Quản lý - Quy hoạch",
+      "target": "E",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_RIASEC",
+      "source": "Kinh tế - Quản lý - Quy hoạch",
+      "target": "C",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_RIASEC",
+      "source": "Kinh tế - Quản lý - Quy hoạch",
+      "target": "I",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_MBTI",
+      "source": "Kinh tế - Quản lý - Quy hoạch",
+      "target": "ENTJ",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_MBTI",
+      "source": "Kinh tế - Quản lý - Quy hoạch",
+      "target": "ESTJ",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_MBTI",
+      "source": "Kinh tế - Quản lý - Quy hoạch",
+      "target": "INTJ",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Kinh tế - Quản lý - Quy hoạch",
+      "target": "Kinh tế học vĩ mô",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Kinh tế - Quản lý - Quy hoạch",
+      "target": "Quản lý công",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Kinh tế - Quản lý - Quy hoạch",
+      "target": "Quy hoạch đô thị",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Kinh tế - Quản lý - Quy hoạch",
+      "target": "Quản trị vận hành",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_RIASEC",
+      "source": "Báo chí - Thư viện",
+      "target": "A",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_RIASEC",
+      "source": "Báo chí - Thư viện",
+      "target": "S",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_RIASEC",
+      "source": "Báo chí - Thư viện",
+      "target": "E",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_MBTI",
+      "source": "Báo chí - Thư viện",
+      "target": "ENFP",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_MBTI",
+      "source": "Báo chí - Thư viện",
+      "target": "INFJ",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_MBTI",
+      "source": "Báo chí - Thư viện",
+      "target": "INFP",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Báo chí - Thư viện",
+      "target": "Báo chí đa phương tiện",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Báo chí - Thư viện",
+      "target": "Thông tin học",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Báo chí - Thư viện",
+      "target": "Quản trị thư viện số",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Báo chí - Thư viện",
+      "target": "Quan hệ công chúng (PR)",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_RIASEC",
+      "source": "Y - Dược",
+      "target": "I",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_RIASEC",
+      "source": "Y - Dược",
+      "target": "S",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_RIASEC",
+      "source": "Y - Dược",
+      "target": "R",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_MBTI",
+      "source": "Y - Dược",
+      "target": "INFJ",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_MBTI",
+      "source": "Y - Dược",
+      "target": "ISFJ",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_MBTI",
+      "source": "Y - Dược",
+      "target": "ISTP",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Y - Dược",
+      "target": "Y khoa lâm sàng",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Y - Dược",
+      "target": "Dược học & Bào chế",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Y - Dược",
+      "target": "Điều dưỡng",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Y - Dược",
+      "target": "Y tế công cộng",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_RIASEC",
+      "source": "Điện - Cơ điện tử",
+      "target": "R",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_RIASEC",
+      "source": "Điện - Cơ điện tử",
+      "target": "I",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_RIASEC",
+      "source": "Điện - Cơ điện tử",
+      "target": "C",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_MBTI",
+      "source": "Điện - Cơ điện tử",
+      "target": "ISTP",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_MBTI",
+      "source": "Điện - Cơ điện tử",
+      "target": "INTJ",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_MBTI",
+      "source": "Điện - Cơ điện tử",
+      "target": "INTP",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Điện - Cơ điện tử",
+      "target": "Kỹ thuật điện công nghiệp",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Điện - Cơ điện tử",
+      "target": "Cơ điện tử & Robot",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Điện - Cơ điện tử",
+      "target": "Hệ thống điều khiển",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Điện - Cơ điện tử",
+      "target": "Thiết kế phần cứng",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_RIASEC",
+      "source": "Xây dựng",
+      "target": "R",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_RIASEC",
+      "source": "Xây dựng",
+      "target": "I",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_RIASEC",
+      "source": "Xây dựng",
+      "target": "C",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_MBTI",
+      "source": "Xây dựng",
+      "target": "ISTJ",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_MBTI",
+      "source": "Xây dựng",
+      "target": "ESTJ",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_MBTI",
+      "source": "Xây dựng",
+      "target": "ESTP",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Xây dựng",
+      "target": "Kỹ thuật kết cấu",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Xây dựng",
+      "target": "Quản lý dự án xây dựng",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Xây dựng",
+      "target": "Địa kỹ thuật",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Xây dựng",
+      "target": "Quy hoạch hạ tầng",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_RIASEC",
+      "source": "Luật - Tòa án",
+      "target": "E",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_RIASEC",
+      "source": "Luật - Tòa án",
+      "target": "I",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_RIASEC",
+      "source": "Luật - Tòa án",
+      "target": "C",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_MBTI",
+      "source": "Luật - Tòa án",
+      "target": "ENTJ",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_MBTI",
+      "source": "Luật - Tòa án",
+      "target": "ENTP",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_MBTI",
+      "source": "Luật - Tòa án",
+      "target": "ISTJ",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Luật - Tòa án",
+      "target": "Luật hình sự",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Luật - Tòa án",
+      "target": "Luật dân sự & thương mại",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Luật - Tòa án",
+      "target": "Tố tụng và xét xử",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Luật - Tòa án",
+      "target": "Tư vấn pháp lý doanh nghiệp",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_RIASEC",
+      "source": "Du lịch - Khách sạn",
+      "target": "E",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_RIASEC",
+      "source": "Du lịch - Khách sạn",
+      "target": "S",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_RIASEC",
+      "source": "Du lịch - Khách sạn",
+      "target": "C",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_MBTI",
+      "source": "Du lịch - Khách sạn",
+      "target": "ESFJ",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_MBTI",
+      "source": "Du lịch - Khách sạn",
+      "target": "ENFP",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_MBTI",
+      "source": "Du lịch - Khách sạn",
+      "target": "ESTP",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Du lịch - Khách sạn",
+      "target": "Quản trị khách sạn",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Du lịch - Khách sạn",
+      "target": "Quản trị lữ hành",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Du lịch - Khách sạn",
+      "target": "Quản trị ẩm thực (F&B)",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Du lịch - Khách sạn",
+      "target": "Tổ chức sự kiện",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_RIASEC",
+      "source": "Mỹ thuật - Thiết kế",
+      "target": "A",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_RIASEC",
+      "source": "Mỹ thuật - Thiết kế",
+      "target": "I",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_RIASEC",
+      "source": "Mỹ thuật - Thiết kế",
+      "target": "R",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_MBTI",
+      "source": "Mỹ thuật - Thiết kế",
+      "target": "ISFP",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_MBTI",
+      "source": "Mỹ thuật - Thiết kế",
+      "target": "ENFP",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_MBTI",
+      "source": "Mỹ thuật - Thiết kế",
+      "target": "INFP",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Mỹ thuật - Thiết kế",
+      "target": "Hội họa & Điêu khắc",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Mỹ thuật - Thiết kế",
+      "target": "Thiết kế đồ họa",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Mỹ thuật - Thiết kế",
+      "target": "Thiết kế nội thất",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Mỹ thuật - Thiết kế",
+      "target": "Thiết kế công nghiệp",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_RIASEC",
+      "source": "Thời trang",
+      "target": "A",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_RIASEC",
+      "source": "Thời trang",
+      "target": "E",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_RIASEC",
+      "source": "Thời trang",
+      "target": "R",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_MBTI",
+      "source": "Thời trang",
+      "target": "ISFP",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_MBTI",
+      "source": "Thời trang",
+      "target": "ENFP",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_MBTI",
+      "source": "Thời trang",
+      "target": "ENTP",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Thời trang",
+      "target": "Thiết kế thời trang",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Thời trang",
+      "target": "Quản trị thương hiệu thời trang",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Thời trang",
+      "target": "Công nghệ may",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Thời trang",
+      "target": "Stylist tạo dựng phong cách",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_RIASEC",
+      "source": "Thủy sản",
+      "target": "R",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_RIASEC",
+      "source": "Thủy sản",
+      "target": "I",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_RIASEC",
+      "source": "Thủy sản",
+      "target": "S",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_MBTI",
+      "source": "Thủy sản",
+      "target": "ISTJ",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_MBTI",
+      "source": "Thủy sản",
+      "target": "ISTP",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_MBTI",
+      "source": "Thủy sản",
+      "target": "ISFP",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Thủy sản",
+      "target": "Nuôi trồng thủy sản",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Thủy sản",
+      "target": "Khai thác thủy sản",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Thủy sản",
+      "target": "Chế biến thủy hải sản",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Thủy sản",
+      "target": "Bệnh học thủy sản",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_RIASEC",
+      "source": "Nhân sự",
+      "target": "S",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_RIASEC",
+      "source": "Nhân sự",
+      "target": "E",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_RIASEC",
+      "source": "Nhân sự",
+      "target": "C",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_MBTI",
+      "source": "Nhân sự",
+      "target": "ENFJ",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_MBTI",
+      "source": "Nhân sự",
+      "target": "ESFJ",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_MBTI",
+      "source": "Nhân sự",
+      "target": "ENFP",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Nhân sự",
+      "target": "Tuyển dụng & Thu hút tài năng",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Nhân sự",
+      "target": "Đào tạo & Phát triển (L&D)",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Nhân sự",
+      "target": "Tiền lương & Phúc lợi (C&B)",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Nhân sự",
+      "target": "Phát triển tổ chức",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_RIASEC",
+      "source": "Toán học - Thống kê",
+      "target": "I",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_RIASEC",
+      "source": "Toán học - Thống kê",
+      "target": "C",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_RIASEC",
+      "source": "Toán học - Thống kê",
+      "target": "R",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_MBTI",
+      "source": "Toán học - Thống kê",
+      "target": "INTP",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_MBTI",
+      "source": "Toán học - Thống kê",
+      "target": "INTJ",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_MBTI",
+      "source": "Toán học - Thống kê",
+      "target": "ISTJ",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Toán học - Thống kê",
+      "target": "Thống kê ứng dụng",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Toán học - Thống kê",
+      "target": "Toán tài chính",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Toán học - Thống kê",
+      "target": "Khoa học tính toán bảo hiểm",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Toán học - Thống kê",
+      "target": "Toán tối ưu hóa",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_RIASEC",
+      "source": "Khoa học tự nhiên",
+      "target": "I",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_RIASEC",
+      "source": "Khoa học tự nhiên",
+      "target": "R",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_RIASEC",
+      "source": "Khoa học tự nhiên",
+      "target": "C",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_MBTI",
+      "source": "Khoa học tự nhiên",
+      "target": "INTP",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_MBTI",
+      "source": "Khoa học tự nhiên",
+      "target": "INTJ",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_MBTI",
+      "source": "Khoa học tự nhiên",
+      "target": "INFJ",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Khoa học tự nhiên",
+      "target": "Vật lý học",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Khoa học tự nhiên",
+      "target": "Hóa học",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Khoa học tự nhiên",
+      "target": "Khoa học Trái đất & Môi trường",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Khoa học tự nhiên",
+      "target": "Thiên văn học",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_RIASEC",
+      "source": "Văn hóa - Nghệ thuật",
+      "target": "A",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_RIASEC",
+      "source": "Văn hóa - Nghệ thuật",
+      "target": "E",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_RIASEC",
+      "source": "Văn hóa - Nghệ thuật",
+      "target": "S",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_MBTI",
+      "source": "Văn hóa - Nghệ thuật",
+      "target": "INFJ",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_MBTI",
+      "source": "Văn hóa - Nghệ thuật",
+      "target": "INFP",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_MBTI",
+      "source": "Văn hóa - Nghệ thuật",
+      "target": "ENFJ",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Văn hóa - Nghệ thuật",
+      "target": "Nghiên cứu văn hóa",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Văn hóa - Nghệ thuật",
+      "target": "Quản lý di sản",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Văn hóa - Nghệ thuật",
+      "target": "Biểu diễn nghệ thuật",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Văn hóa - Nghệ thuật",
+      "target": "Sáng tác & phê bình nghệ thuật",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_RIASEC",
+      "source": "Chăm sóc sức khỏe",
+      "target": "S",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_RIASEC",
+      "source": "Chăm sóc sức khỏe",
+      "target": "I",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_RIASEC",
+      "source": "Chăm sóc sức khỏe",
+      "target": "R",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_MBTI",
+      "source": "Chăm sóc sức khỏe",
+      "target": "ESFJ",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_MBTI",
+      "source": "Chăm sóc sức khỏe",
+      "target": "ISFJ",
+      "key": 0
+    },
+    {
+      "relation": "PHÙ_HỢP_MBTI",
+      "source": "Chăm sóc sức khỏe",
+      "target": "INFJ",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Chăm sóc sức khỏe",
+      "target": "Chăm sóc giảm nhẹ & Điều dưỡng",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Chăm sóc sức khỏe",
+      "target": "Vật lý trị liệu",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Chăm sóc sức khỏe",
+      "target": "Y tế dự phòng cộng đồng",
+      "key": 0
+    },
+    {
+      "relation": "BAO_GỒM_NGÀNH_HẸP",
+      "source": "Chăm sóc sức khỏe",
+      "target": "Dinh dưỡng lâm sàng",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Quốc gia Hà Nội (VNU)",
+      "target": "Kinh tế",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Quốc gia Hà Nội (VNU)",
+      "target": "y dược",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Quốc gia Hà Nội (VNU)",
+      "target": "toán học",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Quốc gia Hà Nội (VNU)",
+      "target": "vật lý",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Quốc gia Hà Nội (VNU)",
+      "target": "hóa học",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Quốc gia Hà Nội (VNU)",
+      "target": "sinh học",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Quốc gia Hà Nội (VNU)",
+      "target": "kỹ thuật robot",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Bách khoa Hà Nội (HUST)",
+      "target": "kỹ thuật điều khiển và tự động hóa",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Bách khoa Hà Nội (HUST)",
+      "target": "kỹ thuật điện tử - viễn thông",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Bách khoa Hà Nội (HUST)",
+      "target": "kỹ thuật điện",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Bách khoa Hà Nội (HUST)",
+      "target": "kỹ thuật cơ điện tử",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Bách khoa Hà Nội (HUST)",
+      "target": "toán - tin",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Kinh tế Quốc dân (NEU)",
+      "target": "Kinh tế",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Kinh tế Quốc dân (NEU)",
+      "target": "quản trị kinh doanh",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Kinh tế Quốc dân (NEU)",
+      "target": "tài chính - ngân hàng",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Kinh tế Quốc dân (NEU)",
+      "target": "kế toán",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Kinh tế Quốc dân (NEU)",
+      "target": "marketing",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Kinh tế Quốc dân (NEU)",
+      "target": "quản trị nhân lực",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Học viện Ngoại giao (DAV)",
+      "target": "truyền thông quốc tế",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Học viện Ngoại giao (DAV)",
+      "target": "luật quốc tế",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Học viện Tài chính (AOF)",
+      "target": "Tài chính",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Học viện Tài chính (AOF)",
+      "target": "ngân hàng",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Học viện Tài chính (AOF)",
+      "target": "kế toán",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Học viện Tài chính (AOF)",
+      "target": "kiểm toán",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Học viện Tài chính (AOF)",
+      "target": "quản trị kinh doanh",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Ngoại thương (FTU)",
+      "target": "quản trị kinh doanh",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Ngoại thương (FTU)",
+      "target": "tài chính - ngân hàng",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Ngoại thương (FTU)",
+      "target": "kế toán",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Văn hóa Hà Nội (HUC)",
+      "target": "Quản lý văn hóa",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Văn hóa Hà Nội (HUC)",
+      "target": "du lịch",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Văn hóa Hà Nội (HUC)",
+      "target": "thông tin thư viện",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Văn hóa Hà Nội (HUC)",
+      "target": "báo chí",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Luật Hà Nội (HLU)",
+      "target": "Luật",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Luật Hà Nội (HLU)",
+      "target": "luật kinh tế",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Luật Hà Nội (HLU)",
+      "target": "luật thương mại quốc tế",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Học viện Công nghệ Bưu chính Viễn thông (PTIT)",
+      "target": "kỹ thuật điện tử viễn thông",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Học viện Công nghệ Bưu chính Viễn thông (PTIT)",
+      "target": "công nghệ đa phương tiện",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Hà Nội (HANU)",
+      "target": "quản trị kinh doanh",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Hà Nội (HANU)",
+      "target": "du lịch",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Học viện Ngân hàng (BA)",
+      "target": "Tài chính - ngân hàng",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Học viện Ngân hàng (BA)",
+      "target": "kế toán",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Học viện Ngân hàng (BA)",
+      "target": "quản trị kinh doanh",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Xây dựng Hà Nội (HUCE)",
+      "target": "Kỹ thuật xây dựng",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Xây dựng Hà Nội (HUCE)",
+      "target": "kiến trúc",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Xây dựng Hà Nội (HUCE)",
+      "target": "quản lý xây dựng",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Y Hà Nội (HMU)",
+      "target": "Y khoa",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Y Hà Nội (HMU)",
+      "target": "răng - hàm - mặt",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Y Hà Nội (HMU)",
+      "target": "y học cổ truyền",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Y Hà Nội (HMU)",
+      "target": "điều dưỡng",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Y Hà Nội (HMU)",
+      "target": "kỹ thuật xét nghiệm y học",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Học viện Báo chí và Tuyên truyền (AJC)",
+      "target": "Báo chí",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Học viện Báo chí và Tuyên truyền (AJC)",
+      "target": "truyền thông",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Học viện Báo chí và Tuyên truyền (AJC)",
+      "target": "quan hệ công chúng",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Học viện Báo chí và Tuyên truyền (AJC)",
+      "target": "xuất bản",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Mỏ - Địa chất (HUMG)",
+      "target": "du lịch",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Lâm nghiệp Việt Nam",
+      "target": "Lâm nghiệp",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Công nghệ Giao thông vận tải (UTT)",
+      "target": "Kỹ thuật xây dựng công trình giao thông",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học FPT",
+      "target": "thiết kế đồ họa và mỹ thuật số",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học FPT",
+      "target": "truyền thông đa phương tiện",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học FPT",
+      "target": "quan hệ công chúng",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học FPT",
+      "target": "truyền thông marketing tích hợp",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học FPT",
+      "target": "truyền thông thương hiệu",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học FPT",
+      "target": "luật",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học FPT",
+      "target": "luật kinh tế",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học FPT",
+      "target": "marketing",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học FPT",
+      "target": "quản trị kinh doanh",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học FPT",
+      "target": "quản trị khách sạn",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học FPT",
+      "target": "quản trị dịch vụ du lịch và lữ hành",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học FPT",
+      "target": "phân tích kinh doanh",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học FPT",
+      "target": "công nghệ tài chính",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học FPT",
+      "target": "tài chính doanh nghiệp",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học FPT",
+      "target": "tài chính thông minh",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học FPT",
+      "target": "tài chính ngân hàng",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Thủy lợi (TLU)",
+      "target": "Kỹ thuật xây dựng công trình thủy",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Thủy lợi (TLU)",
+      "target": "kỹ thuật xây dựng dân dụng và công nghiệp",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Điện lực (EPU)",
+      "target": "quản trị kinh doanh",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Điện lực (EPU)",
+      "target": "marketing",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Điện lực (EPU)",
+      "target": "tài chính - ngân hàng",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Điện lực (EPU)",
+      "target": "công nghệ tài chính",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Điện lực (EPU)",
+      "target": "kế toán",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Điện lực (EPU)",
+      "target": "kiểm toán",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Điện lực (EPU)",
+      "target": "quản trị dịch vụ du lịch và lữ hành",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Mở Hà Nội (HOU)",
+      "target": "Thiết kế đồ họa",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Mở Hà Nội (HOU)",
+      "target": "thiết kế thời trang",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Mở Hà Nội (HOU)",
+      "target": "quản trị kinh doanh",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Mở Hà Nội (HOU)",
+      "target": "tài chính - ngân hàng",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Mở Hà Nội (HOU)",
+      "target": "bảo hiểm",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Mở Hà Nội (HOU)",
+      "target": "kế toán",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Mở Hà Nội (HOU)",
+      "target": "luật",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Mở Hà Nội (HOU)",
+      "target": "luật kinh tế",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Mở Hà Nội (HOU)",
+      "target": "luật quốc tế",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Mở Hà Nội (HOU)",
+      "target": "công nghệ kỹ thuật điện tử - viễn thông",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Mở Hà Nội (HOU)",
+      "target": "công nghệ kỹ thuật điều khiển và tự động hóa",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Mở Hà Nội (HOU)",
+      "target": "thiết kế nội thất",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Mở Hà Nội (HOU)",
+      "target": "kiến trúc",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Phenikaa",
+      "target": "kỹ thuật điều khiển và tự động hóa",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Phenikaa",
+      "target": "kỹ thuật điện tử - viễn thông",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Phenikaa",
+      "target": "kỹ thuật cơ điện tử",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Phenikaa",
+      "target": "quản trị kinh doanh",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Phenikaa",
+      "target": "kế toán",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Phenikaa",
+      "target": "tài chính - ngân hàng",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Phenikaa",
+      "target": "quản trị nhân lực",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Phenikaa",
+      "target": "luật kinh tế",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Phenikaa",
+      "target": "marketing",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Phenikaa",
+      "target": "công nghệ tài chính",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Phenikaa",
+      "target": "kinh tế số",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Phenikaa",
+      "target": "kinh doanh số",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Phenikaa",
+      "target": "công nghệ marketing",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Phenikaa",
+      "target": "du lịch",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Phenikaa",
+      "target": "kinh doanh du lịch số",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Phenikaa",
+      "target": "hướng dẫn du lịch quốc tế",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Phenikaa",
+      "target": "quản trị khách sạn",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Phenikaa",
+      "target": "điều dưỡng",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Phenikaa",
+      "target": "dược học",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Phenikaa",
+      "target": "kỹ thuật phục hồi chức năng",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Phenikaa",
+      "target": "kỹ thuật xét nghiệm y học",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Phenikaa",
+      "target": "kỹ thuật hình ảnh y học",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Phenikaa",
+      "target": "y khoa",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Phenikaa",
+      "target": "răng - hàm - mặt",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Đại học Phenikaa",
+      "target": "y học cổ truyền",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Thăng Long (DTL)",
+      "target": "truyền thông đa phương tiện",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Thăng Long (DTL)",
+      "target": "quản trị kinh doanh",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Thăng Long (DTL)",
+      "target": "marketing",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Thăng Long (DTL)",
+      "target": "tài chính - ngân hàng",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Thăng Long (DTL)",
+      "target": "kế toán",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Thăng Long (DTL)",
+      "target": "luật kinh tế",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Thăng Long (DTL)",
+      "target": "điều dưỡng",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Thăng Long (DTL)",
+      "target": "quản trị dịch vụ du lịch và lữ hành",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Thăng Long (DTL)",
+      "target": "quản trị khách sạn",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Kinh doanh và Công nghệ Hà Nội (HUBT)",
+      "target": "Thiết kế đồ họa",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Kinh doanh và Công nghệ Hà Nội (HUBT)",
+      "target": "kinh tế",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Kinh doanh và Công nghệ Hà Nội (HUBT)",
+      "target": "quản lý nhà nước",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Kinh doanh và Công nghệ Hà Nội (HUBT)",
+      "target": "quản trị kinh doanh",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Kinh doanh và Công nghệ Hà Nội (HUBT)",
+      "target": "tài chính - ngân hàng",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Kinh doanh và Công nghệ Hà Nội (HUBT)",
+      "target": "kế toán",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Kinh doanh và Công nghệ Hà Nội (HUBT)",
+      "target": "luật kinh tế",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Kinh doanh và Công nghệ Hà Nội (HUBT)",
+      "target": "công nghệ kỹ thuật cơ - điện tử",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Kinh doanh và Công nghệ Hà Nội (HUBT)",
+      "target": "công nghệ kỹ thuật điện điện tử",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Kinh doanh và Công nghệ Hà Nội (HUBT)",
+      "target": "kiến trúc",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Kinh doanh và Công nghệ Hà Nội (HUBT)",
+      "target": "quản lý đô thị và công trình",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Kinh doanh và Công nghệ Hà Nội (HUBT)",
+      "target": "thiết kế nội thất",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Kinh doanh và Công nghệ Hà Nội (HUBT)",
+      "target": "kỹ thuật xây dựng",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Kinh doanh và Công nghệ Hà Nội (HUBT)",
+      "target": "y khoa",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Kinh doanh và Công nghệ Hà Nội (HUBT)",
+      "target": "dược",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Kinh doanh và Công nghệ Hà Nội (HUBT)",
+      "target": "điều dưỡng",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Kinh doanh và Công nghệ Hà Nội (HUBT)",
+      "target": "răng - hàm - mặt",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Kinh doanh và Công nghệ Hà Nội (HUBT)",
+      "target": "quản trị dịch vụ du lịch và lữ hành",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Sư phạm Nghệ thuật Trung ương (NUAE)",
+      "target": "thiết kế đồ họa",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Sư phạm Nghệ thuật Trung ương (NUAE)",
+      "target": "thiết kế thời trang",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Thủ đô Hà Nội (HNMU)",
+      "target": "quản trị khách sạn",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Đại học Thủ đô Hà Nội (HNMU)",
+      "target": "quản trị dịch vụ du lịch và lữ hành",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Công nghệ Bách khoa Hà Nội (HPC)",
+      "target": "hướng dẫn du lịch",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Công nghệ Bách khoa Hà Nội (HPC)",
+      "target": "quản trị khách sạn",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Công nghệ Bách khoa Hà Nội (HPC)",
+      "target": "quản trị lữ hành",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Công nghệ Bách khoa Hà Nội (HPC)",
+      "target": "thiết kế đồ họa",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Công nghệ Bách khoa Hà Nội (HPC)",
+      "target": "kế toán",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Công nghệ Bách khoa Hà Nội (HPC)",
+      "target": "quản trị kinh doanh",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Công nghệ Bách khoa Hà Nội (HPC)",
+      "target": "marketing",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Công nghệ Bách khoa Hà Nội (HPC)",
+      "target": "điện công nghiệp",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Công nghệ Bách khoa Hà Nội (HPC)",
+      "target": "công nghệ kỹ thuật điện - điện tử",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Công nghệ Bách khoa Hà Nội (HPC)",
+      "target": "tự động hóa công nghiệp",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng FPT Polytechnic",
+      "target": "thiết kế website",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng FPT Polytechnic",
+      "target": "digital marketing",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng FPT Polytechnic",
+      "target": "quản trị doanh nghiệp",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng FPT Polytechnic",
+      "target": "quản lý bán hàng",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng FPT Polytechnic",
+      "target": "thiết kế truyền thông đa phương tiện",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng FPT Polytechnic",
+      "target": "thiết kế thương hiệu và bao bì",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng FPT Polytechnic",
+      "target": "cơ điện tử",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng FPT Polytechnic",
+      "target": "tự động hóa",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng FPT Polytechnic",
+      "target": "quản trị khách sạn",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng FPT Polytechnic",
+      "target": "quản trị nhà hàng",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng FPT Polytechnic",
+      "target": "hướng dẫn du lịch",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng FPT Polytechnic",
+      "target": "thiết kế đồ họa - mỹ thuật đa phương tiện",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng FPT Polytechnic",
+      "target": "quản trị doanh nghiệp vừa và nhỏ - marketing & sales",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng FPT Polytechnic",
+      "target": "quan hệ công chúng - truyền thông & tổ chức sự kiện",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng FPT Polytechnic",
+      "target": "quản trị lữ hành",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Công nghệ cao Hà Nội (HHT)",
+      "target": "Du lịch sinh thái",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Công nghệ cao Hà Nội (HHT)",
+      "target": "hướng dẫn du lịch",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Công nghệ cao Hà Nội (HHT)",
+      "target": "thiết kế đồ họa",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Công nghệ cao Hà Nội (HHT)",
+      "target": "thiết kế nội ngoại thất",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Công nghệ cao Hà Nội (HHT)",
+      "target": "quan hệ công chúng",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Công nghệ cao Hà Nội (HHT)",
+      "target": "kế toán doanh nghiệp",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Công nghệ cao Hà Nội (HHT)",
+      "target": "quản trị doanh nghiệp vừa và nhỏ",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Công nghệ cao Hà Nội (HHT)",
+      "target": "thiết kế trang web",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Công nghệ cao Hà Nội (HHT)",
+      "target": "kỹ thuật lắp đặt và điều khiển điện trong công nghiệp",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Công nghệ cao Hà Nội (HHT)",
+      "target": "điện tử công nghiệp",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Công nghệ cao Hà Nội (HHT)",
+      "target": "điện tử tự động hóa",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Công nghệ cao Hà Nội (HHT)",
+      "target": "điện công nghiệp",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Công nghệ cao Hà Nội (HHT)",
+      "target": "cơ điện tử",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Công nghệ cao Hà Nội (HHT)",
+      "target": "công nghệ kỹ thuật điều khiển và tự động hóa",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Thương mại và Du lịch Hà Nội (HCCT)",
+      "target": "Quản trị kinh doanh",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Thương mại và Du lịch Hà Nội (HCCT)",
+      "target": "kế toán",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Thương mại và Du lịch Hà Nội (HCCT)",
+      "target": "quản trị khách sạn",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Thương mại và Du lịch Hà Nội (HCCT)",
+      "target": "kinh doanh thương mại",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Thương mại và Du lịch Hà Nội (HCCT)",
+      "target": "quản trị nhà hàng",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Thương mại và Du lịch Hà Nội (HCCT)",
+      "target": "hướng dẫn du lịch",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Thương mại và Du lịch Hà Nội (HCCT)",
+      "target": "kỹ thuật chế biến món ăn",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Y tế Hà Đông",
+      "target": "Y sĩ đa khoa",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Y tế Hà Đông",
+      "target": "y học cổ truyền",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Y tế Hà Đông",
+      "target": "dược",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Y tế Hà Đông",
+      "target": "điều dưỡng",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Y tế Hà Đông",
+      "target": "hộ sinh",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Y tế Hà Đông",
+      "target": "kỹ thuật xét nghiệm y học",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Y tế Hà Đông",
+      "target": "kỹ thuật vật lý trị liệu và phục hồi chức năng",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Y Hà Nội",
+      "target": "Điều dưỡng",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Y Hà Nội",
+      "target": "dược",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Y Hà Nội",
+      "target": "y sĩ đa khoa",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Y Hà Nội",
+      "target": "hộ sinh",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Y Hà Nội",
+      "target": "kỹ thuật xét nghiệm y học",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Y Hà Nội",
+      "target": "kỹ thuật hình ảnh y học",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Y Hà Nội",
+      "target": "kỹ thuật phục hồi chức năng",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Y Hà Nội",
+      "target": "y học cổ truyền",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Cơ điện Hà Nội (HCEM)",
+      "target": "Điện công nghiệp",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Cơ điện Hà Nội (HCEM)",
+      "target": "cơ điện tử",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Cơ điện Hà Nội (HCEM)",
+      "target": "công nghệ kỹ thuật điện điện tử",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Cơ điện Hà Nội (HCEM)",
+      "target": "công nghệ kỹ thuật cơ điện tử",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Cơ điện Hà Nội (HCEM)",
+      "target": "công nghệ kỹ thuật điện tử truyền thông",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Cơ điện Hà Nội (HCEM)",
+      "target": "thiết kế đồ họa",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Cơ điện Hà Nội (HCEM)",
+      "target": "marketing thương mại",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Cơ điện Hà Nội (HCEM)",
+      "target": "kế toán",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Cơ điện Hà Nội (HCEM)",
+      "target": "kế toán doanh nghiệp",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Cơ điện Hà Nội (HCEM)",
+      "target": "quản trị doanh nghiệp vừa và nhỏ",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Ngoại ngữ và Công nghệ Hà Nội (FTC)",
+      "target": "thiết kế đồ hoạ",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Ngoại ngữ và Công nghệ Hà Nội (FTC)",
+      "target": "công nghệ kỹ thuật điện điện tử",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Ngoại ngữ và Công nghệ Hà Nội (FTC)",
+      "target": "quản trị dịch vụ du lịch và lữ hành",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Ngoại ngữ và Công nghệ Hà Nội (FTC)",
+      "target": "hướng dẫn du lịch",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Ngoại ngữ và Công nghệ Hà Nội (FTC)",
+      "target": "kỹ thuật chế biến món ăn",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Ngoại ngữ và Công nghệ Hà Nội (FTC)",
+      "target": "marketing thương mại",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Ngoại ngữ và Công nghệ Hà Nội (FTC)",
+      "target": "quản trị kinh doanh",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Ngoại ngữ và Công nghệ Hà Nội (FTC)",
+      "target": "điện tử công nghiệp",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Y Khoa Phạm Ngọc Thạch",
+      "target": "Cao đẳng dược",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Y Khoa Phạm Ngọc Thạch",
+      "target": "cao đẳng điều dưỡng",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Y Khoa Phạm Ngọc Thạch",
+      "target": "cao đẳng kỹ thuật phục hồi chức năng",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Y Khoa Phạm Ngọc Thạch",
+      "target": "trung cấp y sĩ y học cổ truyền",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Ngoại ngữ - Công nghệ và Truyền thông",
+      "target": "kế toán",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Ngoại ngữ - Công nghệ và Truyền thông",
+      "target": "marketing",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Ngoại ngữ - Công nghệ và Truyền thông",
+      "target": "kinh doanh online",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Ngoại ngữ - Công nghệ và Truyền thông",
+      "target": "kỹ thuật chế biến món ăn",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Du lịch Hà Nội (HTC)",
+      "target": "kinh doanh thương mại",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Du lịch Hà Nội (HTC)",
+      "target": "kỹ thuật chế biến món ăn",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Du lịch Hà Nội (HTC)",
+      "target": "quản trị dịch vụ du lịch và lữ hành",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Du lịch Hà Nội (HTC)",
+      "target": "hướng dẫn du lịch",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Du lịch Hà Nội (HTC)",
+      "target": "quản trị khách sạn",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Du lịch Hà Nội (HTC)",
+      "target": "quản trị nhà hàng và dịch vụ ăn uống",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Du lịch Hà Nội (HTC)",
+      "target": "kế toán",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng nghề Việt Nam - Hàn Quốc thành phố Hà Nội",
+      "target": "Cơ điện tử",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng nghề Bách khoa Hà Nội",
+      "target": "Cơ điện tử",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng nghề Bách khoa Hà Nội",
+      "target": "điện tử công nghiệp",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng nghề Bách khoa Hà Nội",
+      "target": "điện công nghiệp",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng nghề Bách khoa Hà Nội",
+      "target": "kế toán",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng nghề Bách khoa Hà Nội",
+      "target": "quản trị doanh nghiệp",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng nghề Kỹ thuật - Mỹ nghệ Việt Nam",
+      "target": "điện tử",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng nghề Kỹ thuật - Mỹ nghệ Việt Nam",
+      "target": "điện lạnh",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng nghề Kỹ thuật Thiết bị Y tế",
+      "target": "Kỹ thuật thiết bị y tế",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng nghề Kỹ thuật Thiết bị Y tế",
+      "target": "điện tử y sinh",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng nghề Kỹ thuật Thiết bị Y tế",
+      "target": "cơ điện tử",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng nghề Kỹ thuật Thiết bị Y tế",
+      "target": "điện công nghiệp",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng nghề Simco Sông Đà",
+      "target": "xây dựng dân dụng và công nghiệp",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Cộng đồng Hà Nội",
+      "target": "Quản trị kinh doanh",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Cộng đồng Hà Nội",
+      "target": "kế toán",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Cộng đồng Hà Tây",
+      "target": "Nông nghiệp",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Cộng đồng Hà Tây",
+      "target": "kế toán",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Công nghệ Hà Nội",
+      "target": "kỹ thuật điện - điện tử",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Công nghệ Hà Nội",
+      "target": "quản trị kinh doanh",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Công nghệ Hà Nội",
+      "target": "kế toán",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Công nghệ và Kinh tế Hà Nội",
+      "target": "Kế toán",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Công nghệ và Kinh tế Hà Nội",
+      "target": "quản trị kinh doanh",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Công nghệ và Kinh tế Hà Nội",
+      "target": "nông lâm nghiệp",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Điện lực miền Bắc",
+      "target": "Kỹ thuật điện",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Điện tử - Điện lạnh Hà Nội",
+      "target": "Kỹ thuật điện tử",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Điện tử - Điện lạnh Hà Nội",
+      "target": "kỹ thuật điện lạnh",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Điện tử - Điện lạnh Hà Nội",
+      "target": "tự động hóa",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Giao thông vận tải Trung ương I",
+      "target": "kỹ thuật xây dựng công trình giao thông",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Kinh doanh và Công nghệ Hà Nội",
+      "target": "Quản trị kinh doanh",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Kinh doanh và Công nghệ Hà Nội",
+      "target": "kế toán",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng nghề số 1 - BQP",
+      "target": "điện công nghiệp",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng nghề Thăng Long",
+      "target": "kế toán",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng nghề Thăng Long",
+      "target": "quản trị kinh doanh",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng nghề Trần Hưng Đạo",
+      "target": "Quản trị kinh doanh",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng nghề Trần Hưng Đạo",
+      "target": "kế toán",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng nghề Trần Hưng Đạo",
+      "target": "du lịch",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng nghề Văn Lang Hà Nội",
+      "target": "Kỹ thuật chế biến món ăn",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng nghề Văn Lang Hà Nội",
+      "target": "quản trị khách sạn",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng nghề Văn Lang Hà Nội",
+      "target": "hướng dẫn du lịch",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng nghề Văn Lang Hà Nội",
+      "target": "kế toán",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Y Dược Tuệ Tĩnh Hà Nội",
+      "target": "Y học cổ truyền",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Y Dược Tuệ Tĩnh Hà Nội",
+      "target": "dược học",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Y Dược Tuệ Tĩnh Hà Nội",
+      "target": "điều dưỡng",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Y tế Bạch Mai",
+      "target": "Điều dưỡng",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Y tế Bạch Mai",
+      "target": "hộ sinh",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Y tế Bạch Mai",
+      "target": "kỹ thuật xét nghiệm y học",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Y tế Bạch Mai",
+      "target": "kỹ thuật hình ảnh y học",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Dược Hà Nội",
+      "target": "Dược",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Dược Hà Nội",
+      "target": "điều dưỡng",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Anh Quốc BTEC FPT Hà Nội",
+      "target": "Quản trị kinh doanh",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Anh Quốc BTEC FPT Hà Nội",
+      "target": "thiết kế đồ họa",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Công thương Hà Nội",
+      "target": "Kế toán",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Công thương Hà Nội",
+      "target": "quản trị kinh doanh",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Công thương Hà Nội",
+      "target": "hướng dẫn du lịch",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Nghệ thuật Hà Nội",
+      "target": "Âm nhạc",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Nghệ thuật Hà Nội",
+      "target": "mỹ thuật",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Nghệ thuật Hà Nội",
+      "target": "thanh nhạc",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Nghệ thuật Hà Nội",
+      "target": "diễn viên kịch",
+      "key": 0
+    },
+    {
+      "relation": "ĐÀO_TẠO",
+      "source": "Trường Cao đẳng Nghệ thuật Hà Nội",
+      "target": "thiết kế thời trang",
+      "key": 0
+    }
+  ]
+}
