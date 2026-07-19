@@ -48,7 +48,7 @@ export default function RoadmapDashboard() {
 						Theo dõi các lộ trình và ngành nghề bạn đang quan tâm
 					</p>
 				</div>
-				<Button render={<Link href="/chat" />} variant="outline">
+				<Button render={<Link href="/chat" />} nativeButton={false} variant="outline">
 					Quay lại Chat
 				</Button>
 			</div>
@@ -63,7 +63,7 @@ export default function RoadmapDashboard() {
 						<Navigation className="mx-auto text-muted-foreground mb-4 opacity-50" size={48} />
 						<h3 className="text-lg font-medium text-foreground">Roadmap của bạn đang trống</h3>
 						<p className="text-muted-foreground mb-4">Hãy thêm các ngành nghề gợi ý từ trợ lý ảo vào đây nhé.</p>
-						<Button render={<Link href="/chat" />}>
+						<Button render={<Link href="/chat" />} nativeButton={false}>
 							Bắt đầu tư vấn
 						</Button>
 					</div>

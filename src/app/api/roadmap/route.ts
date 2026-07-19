@@ -99,6 +99,24 @@ export async function POST(request: Request) {
 			);
 		}
 
+		// Prevent Foreign Key Constraint violation for fallback careers
+		if (careerId.startsWith("fallback-")) {
+			const [existingCareer] = await db
+				.select()
+				.from(careers)
+				.where(eq(careers.id, careerId))
+				.limit(1);
+
+			if (!existingCareer) {
+				await db.insert(careers).values({
+					id: careerId,
+					title: body.careerTitle || "Gợi ý AI",
+					description: "Nghề nghiệp được tạo tự động bởi AI",
+					riasecVector: body.careerVector || [5, 5, 5, 5, 5, 5],
+				});
+			}
+		}
+
 		// Check if already exists
 		const existing = await db
 			.select()
@@ -135,6 +153,65 @@ export async function POST(request: Request) {
 		return NextResponse.json({ data: inserted }, { status: 201 });
 	} catch (error) {
 		console.error("POST /api/roadmap error", error);
+		return NextResponse.json(
+			{ error: "Internal Server Error" },
+			{ status: 500 },
+		);
+	}
+}
+
+export async function DELETE(request: Request) {
+	const supabase = await createClient();
+	const {
+		data: { user },
+	} = await supabase.auth.getUser();
+
+	if (!user) {
+		return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+	}
+
+	try {
+		if (!db) {
+			return NextResponse.json(
+				{ error: "Database not available" },
+				{ status: 503 },
+			);
+		}
+		const body = await request.json();
+		const { careerId } = body;
+
+		if (!careerId) {
+			return NextResponse.json(
+				{ error: "careerId is required" },
+				{ status: 400 },
+			);
+		}
+
+		const [dbUser] = await db
+			.select({ id: users.id })
+			.from(users)
+			.where(eq(users.authId, user.id))
+			.limit(1);
+
+		if (!dbUser) {
+			return NextResponse.json(
+				{ error: "User not found" },
+				{ status: 404 },
+			);
+		}
+
+		await db
+			.delete(userRoadmap)
+			.where(
+				and(
+					eq(userRoadmap.userId, dbUser.id),
+					eq(userRoadmap.careerId, careerId)
+				)
+			);
+
+		return NextResponse.json({ success: true }, { status: 200 });
+	} catch (error) {
+		console.error("DELETE /api/roadmap error", error);
 		return NextResponse.json(
 			{ error: "Internal Server Error" },
 			{ status: 500 },

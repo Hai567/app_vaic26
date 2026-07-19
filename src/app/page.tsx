@@ -124,7 +124,7 @@ export default function HomePage() {
 							{
 								step: "02",
 								title: "AI phân tích hồ sơ",
-								desc: "Hệ thống RAG so sánh hồ sơ với cơ sở dữ liệu nghề nghiệp và điểm chuẩn.",
+								desc: "Hệ thống so sánh hồ sơ với cơ sở dữ liệu nghề nghiệp và điểm chuẩn.",
 							},
 							{
 								step: "03",

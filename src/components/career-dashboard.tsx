@@ -9,25 +9,50 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 import { Briefcase, BarChart3, ChevronDown, XCircle, RefreshCw, BookmarkPlus, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 import { useState } from "react";
 
 function CareerTab({ career, onReject }: { career: CareerResult; onReject?: () => void }) {
-  const [adding, setAdding] = useState(false);
-  const [added, setAdded] = useState(false);
+  const { userRoadmap, setUserRoadmap } = useChatStore();
+  const [loading, setLoading] = useState(false);
+  
+  const isAdded = userRoadmap.some(r => r.careerId === career.careerId);
 
-  const handleAddToRoadmap = async () => {
-    setAdding(true);
+  const handleToggleRoadmap = async () => {
+    setLoading(true);
     try {
-      const res = await fetch("/api/roadmap", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ careerId: career.careerId, status: "considering" })
-      });
-      if (res.ok) setAdded(true);
+      if (isAdded) {
+        // Remove from roadmap
+        const res = await fetch("/api/roadmap", {
+          method: "DELETE",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ careerId: career.careerId })
+        });
+        if (res.ok) {
+          setUserRoadmap(userRoadmap.filter(r => r.careerId !== career.careerId));
+        }
+      } else {
+        // Add to roadmap
+        const res = await fetch("/api/roadmap", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ 
+            careerId: career.careerId,
+            careerTitle: career.careerTitle,
+            careerVector: career.radarData?.careerVector,
+            status: "considering" 
+          })
+        });
+        if (res.ok) {
+          const json = await res.json();
+          // We just need the careerId to reflect the state
+          setUserRoadmap([...userRoadmap, { careerId: career.careerId }]);
+        }
+      }
     } catch (e) {
       console.error(e);
     } finally {
-      setAdding(false);
+      setLoading(false);
     }
   };
 
@@ -56,14 +81,14 @@ function CareerTab({ career, onReject }: { career: CareerResult; onReject?: () =
 
       {/* Add to Roadmap Button */}
       <Button
-        variant={added ? "outline" : "default"}
+        variant={isAdded ? "outline" : "default"}
         size="sm"
-        onClick={handleAddToRoadmap}
-        disabled={added || adding}
-        className="w-full gap-2 mt-4"
+        onClick={handleToggleRoadmap}
+        disabled={loading}
+        className={cn("w-full gap-2 mt-4", isAdded ? "hover:text-destructive hover:bg-destructive/10 hover:border-destructive/30" : "")}
       >
-        {added ? <CheckCircle2 size={16} className="text-green-500" /> : <BookmarkPlus size={16} />}
-        {added ? "Đã lưu vào Roadmap" : adding ? "Đang lưu..." : "Lưu ngành này vào Roadmap"}
+        {isAdded ? <CheckCircle2 size={16} className="text-green-500" /> : <BookmarkPlus size={16} />}
+        {isAdded ? (loading ? "Đang xóa..." : "Đã lưu (Bấm để xóa)") : (loading ? "Đang lưu..." : "Lưu ngành này vào Roadmap")}
       </Button>
 
       {/* Reject button */}

@@ -63,6 +63,8 @@ interface ChatState {
 	isStreaming: boolean;
 	showOnboarding: boolean;
 	showSettings: boolean;
+	userDataLoaded: boolean;
+	userRoadmap: any[];
 
 	addMessage: (msg: Omit<ChatMessage, "id" | "timestamp">) => void;
 	setProbingStep: (step: ProbingStep) => void;
@@ -82,6 +84,8 @@ interface ChatState {
 	setIsStreaming: (streaming: boolean) => void;
 	setShowOnboarding: (show: boolean) => void;
 	setShowSettings: (show: boolean) => void;
+	setUserDataLoaded: (loaded: boolean) => void;
+	setUserRoadmap: (roadmap: any[]) => void;
 	reset: () => void;
 }
 
@@ -105,6 +109,8 @@ const initialState = {
 	isStreaming: false,
 	showOnboarding: false,
 	showSettings: false,
+	userDataLoaded: false,
+	userRoadmap: [] as any[],
 };
 
 export const useChatStore = create<ChatState>((set) => ({
@@ -164,6 +170,8 @@ export const useChatStore = create<ChatState>((set) => ({
 	setIsStreaming: (streaming) => set({ isStreaming: streaming }),
 	setShowOnboarding: (show) => set({ showOnboarding: show }),
 	setShowSettings: (show) => set({ showSettings: show }),
+	setUserDataLoaded: (loaded) => set({ userDataLoaded: loaded }),
+	setUserRoadmap: (roadmap) => set({ userRoadmap: roadmap }),
 
 	reset: () => set(initialState),
 }));

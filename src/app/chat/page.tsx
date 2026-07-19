@@ -16,10 +16,11 @@ export default function ChatPage() {
     modalData,
     aiExtractedData,
     setModalData,
-    setAiExtractedData,
     setShowOnboarding,
     showOnboarding,
     showSettings,
+    setUserDataLoaded,
+    setUserRoadmap,
   } = useChatStore();
   const [activeTab, setActiveTab] = useState<"chat" | "dashboard">("chat");
 
@@ -42,8 +43,21 @@ export default function ChatPage() {
         if (data.aiExtractedData) {
           setAiExtractedData(data.aiExtractedData);
         }
+
+        // Fetch roadmap
+        try {
+          const rmRes = await fetch("/api/roadmap");
+          if (rmRes.ok) {
+            const rmData = await rmRes.json();
+            setUserRoadmap(rmData.data || []);
+          }
+        } catch {
+          // Ignore roadmap fetch error
+        }
       } catch {
         // Silently fail — onboarding will show on next load
+      } finally {
+        setUserDataLoaded(true);
       }
     }
     loadUserData();

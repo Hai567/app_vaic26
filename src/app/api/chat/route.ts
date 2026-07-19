@@ -130,9 +130,9 @@ async function queryEducationGuidelines(userQuery: string): Promise<string> {
 
 export async function POST(request: Request) {
 	try {
-		const { messages, probingStep, modalData } = await request.json();
+		const { messages, probingStep, modalData, userRoadmap, isInitGreeting } = await request.json();
 
-		if (!messages || !Array.isArray(messages)) {
+		if (!isInitGreeting && (!messages || !Array.isArray(messages))) {
 			return NextResponse.json(
 				{ error: "No messages provided" },
 				{ status: 400 },
@@ -166,10 +166,43 @@ export async function POST(request: Request) {
 
 			if (dbUser) {
 				aiExtractedData = dbUser.aiExtractedData as AiExtractedData;
-				// If they already have some extracted data (e.g. mbti/riasec), consider them returning
 				isReturningUser =
-					!!aiExtractedData?.riasec || !!aiExtractedData?.mbti;
+					!!aiExtractedData?.riasec || !!aiExtractedData?.mbti || !!aiExtractedData?.hobbies?.length;
 			}
+		}
+
+		if (!aiApiKey) {
+			return missingAiKeyResponse();
+		}
+
+		// === PASS 0: Custom Init Greeting ===
+		if (isInitGreeting) {
+			const greetingPrompt = `Bạn là daFalcon — trợ lý tư vấn hướng nghiệp AI thân thiện dành cho học sinh Việt Nam.
+Đây là người dùng cũ quay lại. Mình đã có các thông tin sau:
+- AI_EXTRACTED_DATA (Sở thích, tính cách, chứng chỉ): ${JSON.stringify(aiExtractedData || {})}
+- MODAL_DATA (Học lực, khối thi): ${JSON.stringify(modalData || {})}
+- USER_ROADMAP (Các ngành đang lưu trong Dashboard): ${JSON.stringify(userRoadmap || [])}
+
+Nhiệm vụ của bạn:
+1. Chào mừng họ quay lại bằng ngữ điệu thân thiện, ấm áp.
+2. Nói qua/tóm tắt một cách tự nhiên về những thông tin của họ mà bạn đã biết (ví dụ: các ngành họ đang quan tâm, các sở thích thể thao, môn học...). ĐỪNG liệt kê máy móc như cái máy.
+3. Đặt ra CHÍNH XÁC MỘT (1) câu hỏi mới để khai thác thêm chiều sâu về sở thích hoặc tính cách của họ liên quan đến những gì vừa tóm tắt. (Ví dụ: "Mình thấy bạn thích chơi nhiều thể thao, vậy môn nào bạn thích nhất và tại sao?").
+TUYỆT ĐỐI KHÔNG hỏi dồn dập nhiều câu hỏi cùng lúc.
+
+Quy tắc xưng hô: BẮT BUỘC xưng "mình" và gọi là "bạn".`;
+
+			const initResult = await generateText({
+				model: openrouter.chat(appConfig.ai.model),
+				system: greetingPrompt,
+				messages: [{ role: "user", content: "Hãy bắt đầu cuộc trò chuyện!" }],
+			});
+
+			return NextResponse.json({
+				message: initResult.text || "Chào mừng bạn quay lại! Mình có thể giúp gì cho bạn hôm nay?",
+				isProfileComplete: false,
+				intent: "probing",
+				extractedData: aiExtractedData,
+			});
 		}
 
 		// Build the dynamic system prompt
@@ -194,10 +227,19 @@ AI_EXTRACTED_DATA: ${JSON.stringify(aiExtractedData || {})}
    Thu thập lần lượt: Các chứng chỉ/giải thưởng -> Định hướng nghề nghiệp -> Sở thích -> Tính cách (thông qua câu hỏi tình huống).
 5. Smooth Transitions:
    Mỗi khi chuyển sang chủ đề mới, tạo sự liên kết mượt mà. (Ví dụ: "Thật tuyệt! Với sở thích đó, mình muốn hỏi thêm một chút về thói quen của bạn nhé...")
-6. Implicit Saving:
+6. CHỈ HỎI ĐÚNG 1 CÂU MỖI LẦN (STRICT RULE):
+   TUYỆT ĐỐI KHÔNG BAO GIỜ được hỏi từ 2 câu trở lên trong cùng một lần phản hồi. Bắt buộc phải đợi người dùng trả lời xong câu hỏi hiện tại rồi mới chuyển sang câu hỏi tiếp theo. Điều này đặc biệt áp dụng cho các câu hỏi trắc nghiệm (tình huống).
+7. Format câu hỏi trắc nghiệm (TUYỆT ĐỐI TUÂN THỦ DẤU XUỐNG DÒNG):
+   Khi đưa ra các lựa chọn (A, B, C, D), BẮT BUỘC MỖI ĐÁP ÁN PHẢI NẰM TRÊN MỘT DÒNG RIÊNG BIỆT (bấm Enter xuống dòng trước mỗi lựa chọn).
+   Ví dụ ĐÚNG:
+   A. Lựa chọn 1
+   B. Lựa chọn 2
+   
+   Ví dụ SAI (Cấm tuyệt đối): A. Lựa chọn 1 B. Lựa chọn 2
+8. Điều kiện kết thúc:
+   Khi bạn đã có đủ dữ liệu, hãy kết luận bằng một câu có chứa từ "đã đủ thông tin" hoặc "đã hiểu rõ" và giải thích rằng hệ thống sẽ tiến hành phân tích để đưa ra gợi ý nghề nghiệp (ví dụ: "Mình đã hiểu rõ về bạn rồi! Bây giờ mình sẽ bắt đầu phân tích để đưa ra các gợi ý nghề nghiệp phù hợp nhất nhé."). TUYỆT ĐỐI KHÔNG chào tạm biệt hay nói hẹn gặp lại.
+9. Implicit Saving:
    Hệ thống TỰ ĐỘNG lưu thông tin. BẠN KHÔNG CẦN thông báo việc lưu dữ liệu, cứ trò chuyện tự nhiên.
-7. Điều kiện kết thúc:
-   Khi bạn đã có đủ dữ liệu, hãy kết luận bằng một câu có chứa từ "đã đủ thông tin" hoặc "đã hiểu rõ" để hệ thống tự động phân tích kết quả.
 `;
 
 		// Inject RAG context if information seeking
@@ -237,10 +279,6 @@ AI_EXTRACTED_DATA: ${JSON.stringify(aiExtractedData || {})}
 			content: m.content,
 		}));
 
-		if (!aiApiKey) {
-			return missingAiKeyResponse();
-		}
-
 		// === PASS 1: Conversational Response (no tools) ===
 		const result = await generateText({
 			model: openrouter.chat(appConfig.ai.model),
@@ -262,8 +300,9 @@ AI_EXTRACTED_DATA: ${JSON.stringify(aiExtractedData || {})}
 					model: openrouter.chat(appConfig.ai.model),
 					schema: extractionSchema,
 					prompt: `Analyze the following conversation between an AI career counselor and a Vietnamese student.
-Extract any NEW personal data the student revealed. Only extract data that is explicitly stated, never infer or guess.
-If no new data was revealed, set hasNewData to false.
+Extract any NEW personal data the student revealed. For certificates, careerOrientation, and hobbies, only extract data explicitly stated.
+For 'riasec' and 'mbti', you MUST INFER them based on the user's answers, hobbies, and personality traits. If the user provided enough information, provide a best-guess RIASEC profile (scores from 0 to 10 for each letter) and an MBTI type.
+If no new data was revealed and you cannot infer RIASEC/MBTI, set hasNewData to false.
 
 Conversation:
 ${recentMessages.map((m: any) => `${m.role}: ${m.content}`).join("\n")}

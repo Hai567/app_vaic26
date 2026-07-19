@@ -25,7 +25,7 @@ async function runMigration() {
 
 		// Read the generated migration file
 		const migrationSQL = fs.readFileSync(
-			"./drizzle/0000_fantastic_glorian.sql",
+			"./drizzle/0001_unknown_fenris.sql",
 			"utf-8",
 		);
 

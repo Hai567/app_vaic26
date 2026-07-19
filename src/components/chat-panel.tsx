@@ -13,6 +13,15 @@ import { Send, Bot, User, Loader2, RotateCcw } from "lucide-react";
 const GREETING_MESSAGE =
 	"Chào bạn! 👋 Mình là **daFalcon** — trợ lý tư vấn hướng nghiệp AI.\n\nMình sẽ trò chuyện với bạn để hiểu rõ **sở thích** và **tính cách**, từ đó gợi ý nghề nghiệp và trường đại học phù hợp nhất.\n\nBắt đầu nhé — bạn có thể giới thiệu đôi chút về bản thân, hoặc mình sẽ hỏi trước!";
 
+const IDK_PHRASES = [
+	"Tôi không biết",
+	"Tôi cũng không rõ",
+	"Câu này khó quá, bạn giải thích thêm được không?",
+	"Tôi chưa có câu trả lời cho câu này",
+	"Mình không rành về vấn đề này lắm",
+	"Bạn có thể cho mình xin một ví dụ cụ thể hơn không?"
+];
+
 export function ChatPanel() {
 	const {
 		messages,
@@ -26,18 +35,61 @@ export function ChatPanel() {
 		setAiExtractedData,
 		setCareerResults,
 		reset,
+		userDataLoaded,
+		aiExtractedData,
+		userRoadmap,
 	} = useChatStore();
 
 	const [input, setInput] = useState("");
 	const messagesEndRef = useRef<HTMLDivElement>(null);
 	const inputRef = useRef<HTMLInputElement>(null);
+	const idkIndexRef = useRef(0);
 
-	useEffect(() => {
-		if (messages.length === 0) {
+	const handleInitGreeting = useCallback(async () => {
+		setIsStreaming(true);
+		try {
+			const state = useChatStore.getState();
+			const res = await fetch("/api/chat", {
+				method: "POST",
+				headers: { "Content-Type": "application/json" },
+				body: JSON.stringify({
+					messages: [],
+					probingStep: "greeting",
+					modalData: state.modalData,
+					userRoadmap: state.userRoadmap,
+					isInitGreeting: true,
+				}),
+			});
+			const data = await res.json();
+			addMessage({ role: "assistant", content: data.message || GREETING_MESSAGE });
+			setProbingStep("riasec");
+		} catch {
 			addMessage({ role: "assistant", content: GREETING_MESSAGE });
 			setProbingStep("riasec");
+		} finally {
+			setIsStreaming(false);
 		}
-	}, []); // eslint-disable-line react-hooks/exhaustive-deps
+	}, [addMessage, setIsStreaming, setProbingStep]);
+
+	useEffect(() => {
+		if (!userDataLoaded) return;
+		if (messages.length === 0 && useChatStore.getState().messages.length === 0) {
+			const hasData =
+				(aiExtractedData?.hobbies && aiExtractedData.hobbies.length > 0) ||
+				(aiExtractedData?.certificates && aiExtractedData.certificates.length > 0) ||
+				modalData ||
+				(userRoadmap && userRoadmap.length > 0) ||
+				aiExtractedData?.mbti ||
+				aiExtractedData?.riasec;
+
+			if (hasData) {
+				handleInitGreeting();
+			} else {
+				addMessage({ role: "assistant", content: GREETING_MESSAGE });
+				setProbingStep("riasec");
+			}
+		}
+	}, [messages.length, userDataLoaded, addMessage, setProbingStep, handleInitGreeting]);
 
 	useEffect(() => {
 		messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -92,9 +144,13 @@ export function ChatPanel() {
 			setProbingStep("complete");
 
 			const topCareer = data.primarySuggestions?.[0];
+			const topCareerContent = topCareer 
+				? `**Gợi ý hàng đầu:** ${topCareer.careerTitle}\n\n💡 *${topCareer.fitAnalysis}*` 
+				: "**Top gợi ý:** Xem Dashboard";
+
 			addMessage({
 				role: "assistant",
-				content: `✅ Mình đã phân tích xong! Kết quả đã hiển thị bên phải.\n\n**Top gợi ý:** ${topCareer?.careerTitle || "Xem Dashboard"}\n\nBạn có thể xem chi tiết ở **Dashboard** bên cạnh — bao gồm ${data.primarySuggestions?.length || 0} gợi ý chính${data.reconsideredSuggestions?.length ? ` và ${data.reconsideredSuggestions.length} ngành đáng cân nhắc lại` : ""}.`,
+				content: `✅ Mình đã phân tích xong! Kết quả chi tiết đã hiển thị ở bên phải.\n\n${topCareerContent}\n\nBạn có thể xem thêm lộ trình học tập và ${data.primarySuggestions?.length || 0} gợi ý khác ở **Dashboard** bên cạnh nhé!`,
 			});
 		} catch {
 			setProbingStep("complete");
@@ -107,12 +163,14 @@ export function ChatPanel() {
 		}
 	}
 
-	const handleSend = useCallback(async () => {
-		const trimmed = input.trim();
-		if (!trimmed || isStreaming) return;
+	const handleSend = useCallback(async (textOverride?: string | React.MouseEvent) => {
+		const messageText = typeof textOverride === "string" ? textOverride : input.trim();
+		if (!messageText || isStreaming) return;
 
-		addMessage({ role: "user", content: trimmed });
-		setInput("");
+		addMessage({ role: "user", content: messageText });
+		if (typeof textOverride !== "string") {
+			setInput("");
+		}
 		setIsStreaming(true);
 
 		const currentMessages = useChatStore.getState().messages;
@@ -128,7 +186,7 @@ export function ChatPanel() {
 					role: m.role,
 					content: m.content,
 				})),
-				{ role: "user", content: trimmed },
+				{ role: "user", content: messageText },
 			].filter((m) => m.role !== "system");
 
 			const res = await fetch("/api/chat", {
@@ -173,6 +231,12 @@ export function ChatPanel() {
 		setIsStreaming,
 		advanceProbingStep,
 	]);
+
+	const handleIdkClick = useCallback(() => {
+		const text = IDK_PHRASES[idkIndexRef.current % IDK_PHRASES.length];
+		idkIndexRef.current += 1;
+		handleSend(text);
+	}, [handleSend]);
 
 	function handleKeyDown(e: React.KeyboardEvent) {
 		if (e.key === "Enter" && !e.shiftKey) {
@@ -228,7 +292,7 @@ export function ChatPanel() {
 			{/* Messages */}
 			<div className="flex-1 overflow-y-auto px-4 py-4 space-y-4">
 				<AnimatePresence initial={false}>
-					{messages.map((msg) => (
+					{messages.map((msg, index) => (
 						<motion.div
 							key={msg.id}
 							initial={{ opacity: 0, y: 12 }}
@@ -248,21 +312,35 @@ export function ChatPanel() {
 									<Bot size={14} />
 								)}
 							</div>
-							<div
-								className={`max-w-[80%] rounded-2xl px-4 py-2.5 text-sm leading-relaxed ${msg.role === "user" ? "bg-primary text-primary-foreground rounded-tr-md" : "bg-card border border-border text-foreground rounded-tl-md"}`}
-							>
-								{msg.role === "assistant" ? (
-									<div className="prose prose-sm dark:prose-invert max-w-none [&>p]:m-0 [&>p+p]:mt-2 [&>ul]:my-1 [&>ol]:my-1 [&>h1]:text-base [&>h2]:text-sm [&>h3]:text-sm [&>table]:text-xs">
-										<ReactMarkdown
-											remarkPlugins={[remarkGfm]}
-										>
+							<div className="flex flex-col gap-1 max-w-[80%]">
+								<div
+									className={`rounded-2xl px-4 py-2.5 text-sm leading-relaxed ${msg.role === "user" ? "bg-primary text-primary-foreground rounded-tr-md" : "bg-card border border-border text-foreground rounded-tl-md"}`}
+								>
+									{msg.role === "assistant" ? (
+										<div className="prose prose-sm dark:prose-invert max-w-none [&>p]:m-0 [&>p+p]:mt-2 [&>ul]:my-1 [&>ol]:my-1 [&>h1]:text-base [&>h2]:text-sm [&>h3]:text-sm [&>table]:text-xs">
+											<ReactMarkdown
+												remarkPlugins={[remarkGfm]}
+											>
+												{msg.content}
+											</ReactMarkdown>
+										</div>
+									) : (
+										<span className="whitespace-pre-wrap">
 											{msg.content}
-										</ReactMarkdown>
+										</span>
+									)}
+								</div>
+								{msg.role === "assistant" && msg.content !== GREETING_MESSAGE && !isStreaming && probingStep !== "analyzing" && probingStep !== "complete" && index === messages.length - 1 && (
+									<div className="flex justify-start mt-1">
+										<Button 
+											variant="outline" 
+											size="sm" 
+											className="text-[11px] rounded-full h-6 px-3 text-muted-foreground hover:text-foreground"
+											onClick={handleIdkClick}
+										>
+											Tôi không rõ / Cho ví dụ
+										</Button>
 									</div>
-								) : (
-									<span className="whitespace-pre-wrap">
-										{msg.content}
-									</span>
 								)}
 							</div>
 						</motion.div>

@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
-import { generateText } from "ai";
+import { generateText, generateObject } from "ai";
+import { z } from "zod";
 import { createOpenAI } from "@ai-sdk/openai";
 import { appConfig } from "@/config/app.config";
 import { queryKnowledgeGraph, classifyResults } from "@/lib/rag-pipeline";
@@ -231,12 +232,45 @@ export async function POST(request: Request) {
 				.map((e) => e.targetId),
 		);
 
-		const primaryResults = enrichedResults.filter(
+		let primaryResults = enrichedResults.filter(
 			(c) => !rejectedIds.has(c.careerId),
 		);
 		const reconsideredResults = enrichedResults.filter((c) =>
 			rejectedIds.has(c.careerId),
 		);
+
+		// FALLBACK: If DB is empty or returned no matches, generate careers directly via LLM
+		if (primaryResults.length === 0 && aiApiKey) {
+			try {
+				const fallbackResult = await generateObject({
+					model: openrouter.chat(appConfig.ai.model),
+					schema: z.object({
+						careers: z.array(z.object({
+							title: z.string(),
+							fitAnalysis: z.string()
+						})).min(1).max(3)
+					}),
+					prompt: `Bạn là chuyên gia tư vấn hướng nghiệp. Dựa trên hồ sơ RIASEC: R=${riasec.R}, I=${riasec.I}, A=${riasec.A}, S=${riasec.S}, E=${riasec.E}, C=${riasec.C}${mbti ? `, MBTI: ${mbti}` : ""}.
+Tạo 3 gợi ý nghề nghiệp phù hợp nhất cho người dùng.
+Trả về mảng JSON với cấu trúc:
+{ "careers": [{ "title": "Tên nghề", "fitAnalysis": "Giải thích ngắn gọn lý do phù hợp (dưới 80 chữ)" }] }`
+				});
+
+				primaryResults = fallbackResult.object.careers.map((c, i) => ({
+					careerId: `fallback-${i}-${Date.now()}`,
+					careerTitle: c.title,
+					fitAnalysis: c.fitAnalysis,
+					academicPathways: [],
+					backupOption: null,
+					radarData: {
+						userScores: riasec,
+						careerVector: [riasec.R, riasec.I, riasec.A, riasec.S, riasec.E, riasec.C]
+					}
+				}));
+			} catch (fallbackError) {
+				console.error("Fallback generation failed:", fallbackError);
+			}
+		}
 
 		return NextResponse.json({
 			primarySuggestions: primaryResults.slice(0, 3),
