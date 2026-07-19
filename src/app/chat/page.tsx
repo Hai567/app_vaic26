@@ -15,6 +15,7 @@ export default function ChatPage() {
     reconsideredSuggestions,
     modalData,
     aiExtractedData,
+    setAiExtractedData,
     setModalData,
     setShowOnboarding,
     showOnboarding,
