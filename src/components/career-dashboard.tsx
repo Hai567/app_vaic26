@@ -5,6 +5,7 @@ import { useChatStore, type CareerResult } from "@/store/chat-store";
 import { SkillRadarChart } from "./radar-chart";
 import { AiFitAnalysis } from "./ai-fit-analysis";
 import { AcademicPathway } from "./academic-pathway";
+import { CareerOverview } from "./career-overview";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 import { Briefcase, BarChart3, ChevronDown, XCircle, RefreshCw, BookmarkPlus, CheckCircle2 } from "lucide-react";
@@ -73,6 +74,9 @@ function CareerTab({ career, onReject }: { career: CareerResult; onReject?: () =
       {career.fitAnalysis && (
         <AiFitAnalysis analysis={career.fitAnalysis} careerTitle={career.careerTitle} />
       )}
+
+      {/* Career Detailed Overview */}
+      <CareerOverview career={career} />
 
       {/* Academic Pathway */}
       {career.academicPathways?.length > 0 && (

@@ -24,7 +24,7 @@ export function AiFitAnalysis({ analysis, careerTitle, isReconsidered }: AiFitAn
           <Sparkles size={16} className="text-accent" style={{ color: "#FFD700" }} />
         )}
         <h3 className="text-sm font-bold text-foreground">
-          {isReconsidered ? "Tại sao nên xem xét lại?" : "AI Fit Analysis"}
+          {isReconsidered ? "Tại sao nên xem xét lại?" : "Phân tích AI"}
         </h3>
       </div>
 

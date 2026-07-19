@@ -48,7 +48,7 @@ export function AcademicPathway({
 			<div className="flex items-center gap-2 mb-4">
 				<GraduationCap size={16} className="text-primary" />
 				<h3 className="text-sm font-bold text-foreground">
-					Academic Pathway
+					Lộ trình học thuật
 				</h3>
 			</div>
 

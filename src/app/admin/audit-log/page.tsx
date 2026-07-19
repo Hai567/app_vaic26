@@ -18,11 +18,10 @@ export default async function AuditLogPage() {
     <div className="mx-auto max-w-4xl px-4 py-10 sm:px-6">
       <div className="mb-6">
         <h1 className="text-2xl font-extrabold tracking-tight text-foreground">
-          Bias Audit Log
+          Nhật ký Audit Log
         </h1>
         <p className="mt-1 text-sm text-muted-foreground">
-          System log showing automatic removal of biased keywords from job
-          descriptions during data processing.
+          Nhật ký hệ thống hiển thị việc tự động loại bỏ các từ khóa mang tính thiên kiến khỏi mô tả công việc.
         </p>
       </div>
 

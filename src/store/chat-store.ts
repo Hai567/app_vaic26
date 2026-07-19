@@ -31,6 +31,10 @@ export interface CareerResult {
 	careerId: string;
 	careerTitle: string;
 	fitAnalysis: string;
+	overview?: string;
+	salaryInfo?: string;
+	subSectors?: string[];
+	futureCareers?: string[];
 	academicPathways: AcademicPathway[];
 	backupOption: {
 		universityName: string;

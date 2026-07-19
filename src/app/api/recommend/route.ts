@@ -118,31 +118,42 @@ async function generateFitAnalyses(
 			)
 			.join("\n");
 
-		const result = await generateText({
+		const result = await generateObject({
 			model: openrouter.chat(appConfig.ai.model),
+			schema: z.object({
+				careers: z.array(z.object({
+					fitAnalysis: z.string(),
+					overview: z.string(),
+					salaryInfo: z.string(),
+					subSectors: z.array(z.string()),
+					futureCareers: z.array(z.string()),
+				}))
+			}),
 			prompt: `Bạn là chuyên gia tư vấn hướng nghiệp. Dựa trên hồ sơ RIASEC: R=${riasec.R}, I=${riasec.I}, A=${riasec.A}, S=${riasec.S}, E=${riasec.E}, C=${riasec.C}${mbti ? `, MBTI: ${mbti}` : ""}.
 
-Viết phân tích ngắn gọn (tối đa 80 chữ mỗi ngành) giải thích TẠI SAO ngành này phù hợp với tính cách người dùng:
+Phân tích và cung cấp thông tin chi tiết cho các ngành sau (đảm bảo thứ tự tương ứng):
 ${careerList}
 
-Trả về ĐÚNG FORMAT (mỗi dòng bắt đầu bằng số thứ tự):
-1. [phân tích cho ngành 1]
-2. [phân tích cho ngành 2]
-3. [phân tích cho ngành 3]
-
-KHÔNG markdown, KHÔNG giải thích thêm. Chỉ trả về các dòng phân tích.`,
+Yêu cầu đối với mỗi ngành:
+- fitAnalysis: Giải thích lý do phù hợp dựa trên tính cách (dưới 80 chữ).
+- overview: Giới thiệu tổng quan về ngành học này (khoảng 3-4 câu).
+- salaryInfo: Mức lương tham khảo khi mới ra trường và có kinh nghiệm tại Việt Nam.
+- subSectors: Danh sách 3-5 chuyên ngành nhỏ thuộc ngành này.
+- futureCareers: Danh sách 3-5 vị trí công việc cụ thể sau khi ra trường.`,
 		});
 
-		const lines = result.text
-			.split("\n")
-			.filter((l) => /^\d+\./.test(l.trim()));
-
-		return careerResults.map((career, i) => ({
-			...career,
-			fitAnalysis:
-				lines[i]?.replace(/^\d+\.\s*/, "").trim() ||
-				`Ngành ${career.careerTitle} phù hợp với hồ sơ tính cách và sở thích của bạn dựa trên phân tích RIASEC.`,
-		}));
+		return careerResults.map((career, i) => {
+			const aiData = result.object.careers[i];
+			if (!aiData) return career;
+			return {
+				...career,
+				fitAnalysis: aiData.fitAnalysis || `Ngành ${career.careerTitle} phù hợp với hồ sơ tính cách của bạn.`,
+				overview: aiData.overview,
+				salaryInfo: aiData.salaryInfo,
+				subSectors: aiData.subSectors,
+				futureCareers: aiData.futureCareers
+			};
+		});
 	} catch (error) {
 		console.warn("Fit analysis generation failed (non-blocking):", error);
 		// Fallback: use a generic but real description
@@ -247,19 +258,32 @@ export async function POST(request: Request) {
 					schema: z.object({
 						careers: z.array(z.object({
 							title: z.string(),
-							fitAnalysis: z.string()
+							fitAnalysis: z.string(),
+							overview: z.string(),
+							salaryInfo: z.string(),
+							subSectors: z.array(z.string()),
+							futureCareers: z.array(z.string())
 						})).min(1).max(3)
 					}),
 					prompt: `Bạn là chuyên gia tư vấn hướng nghiệp. Dựa trên hồ sơ RIASEC: R=${riasec.R}, I=${riasec.I}, A=${riasec.A}, S=${riasec.S}, E=${riasec.E}, C=${riasec.C}${mbti ? `, MBTI: ${mbti}` : ""}.
 Tạo 3 gợi ý nghề nghiệp phù hợp nhất cho người dùng.
-Trả về mảng JSON với cấu trúc:
-{ "careers": [{ "title": "Tên nghề", "fitAnalysis": "Giải thích ngắn gọn lý do phù hợp (dưới 80 chữ)" }] }`
+Mỗi ngành cần có:
+- title: Tên ngành
+- fitAnalysis: Giải thích lý do phù hợp (dưới 80 chữ)
+- overview: Giới thiệu tổng quan về ngành
+- salaryInfo: Mức lương tham khảo tại Việt Nam
+- subSectors: 3-5 chuyên ngành nhỏ
+- futureCareers: 3-5 vị trí công việc tương lai`
 				});
 
 				primaryResults = fallbackResult.object.careers.map((c, i) => ({
 					careerId: `fallback-${i}-${Date.now()}`,
 					careerTitle: c.title,
 					fitAnalysis: c.fitAnalysis,
+					overview: c.overview,
+					salaryInfo: c.salaryInfo,
+					subSectors: c.subSectors,
+					futureCareers: c.futureCareers,
 					academicPathways: [],
 					backupOption: null,
 					radarData: {

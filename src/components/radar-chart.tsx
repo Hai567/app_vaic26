@@ -87,7 +87,7 @@ export function SkillRadarChart({
             tickCount={5}
           />
           <Radar
-            name="Your Profile"
+            name="Hồ sơ của bạn"
             dataKey="user"
             stroke={userColor}
             fill={userColor}
@@ -95,7 +95,7 @@ export function SkillRadarChart({
             strokeWidth={2}
           />
           <Radar
-            name="Market Baseline Profile"
+            name="Đường cơ sở thị trường"
             dataKey="job"
             stroke={jobColor}
             fill={jobColor}
